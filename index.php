@@ -2,7 +2,7 @@
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 		<link rel="icon" href="https://th.seaicons.com/wp-content/uploads/2015/06/Circle-icon.png">
-		<title>นายพุฒิพงศ์ สุวรรณาภรณ์กุล Work Space.</title>
+		<title>BOHAT WORK SPACE.</title>
 		<style type="text/css" scoped>
 
 			body{
