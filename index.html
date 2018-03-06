@@ -16,6 +16,11 @@
 				document.getElementById('iframeLinked').src=url;				
 			}
 		</script>
+		<script>
+			function resizeIframe(obj) {
+			  obj.style.height = obj.contentWindow.document.body.scrollHeight + 'px';
+			}
+ 		</script>
 	</head>
 	<body>
 	<!-- Start Body -->
@@ -26,7 +31,7 @@
 			</div>
 	<!-- Start Main BOX-->
 	<div id="main">
-		<iframe src="\home.html"id="iframeLinked" width="auto" height="auto" align="center" scrolling="no"></iframe>
+		<iframe src="\home.html"id="iframeLinked" width="100%" height="resizeIframe(this)" align="center" scrolling="no"></iframe>
 	<!-- END Main BOX-->
 	</div>
 	<!--- START MENU -->
