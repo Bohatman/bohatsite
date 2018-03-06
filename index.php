@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 <html>
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -66,7 +65,7 @@
 			</div>
 	<!-- Start Main BOX-->
 	<div id="main">
-		<iframe src="\home.html"id="iframeLinked" width="100%" height="100%" frameborder="0" align="center">
+		<iframe src="\home.html"id="iframeLinked" width="100%" height="100%" frameborder="0" align="center" />
 	<!-- END Main BOX-->
 	</div>
 	</div>
@@ -76,5 +75,4 @@
   <p>Contact information: <a href="phonemarka5@gmail.com">
   phonemarka5@gmail.com</a>.</p>
 </footer>
->>>>>>> 41e18f9edf4b165896230a71bf1a5d94b41f98a2
 </html>
