@@ -5,12 +5,14 @@
 </head>
 <body>
    <?php 
-   print "Hello World";
+   print "Hello World<br>";
    echo "This is PHP World";
    echo "<br>1+2= ",1+2;
    ?> 
    <script language='php'>
-   print "GeeK House";
+   print "<br>GeeK House<br>";
+   printf ("This is PHP PRINTF<br>");
+   printf ("6*5=%d",6*5);
    </script>
 </body>
 </html>
