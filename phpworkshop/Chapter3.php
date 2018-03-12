@@ -16,7 +16,6 @@
    </script>
    <!--This is HTML IN PHP TAGS-->
    <?php 
-   <h1>ตัวอย่างที่ 1</h1>;
    echo "<font color=red>";
     echo "<br>HelloJa";
     echo "</font>";
