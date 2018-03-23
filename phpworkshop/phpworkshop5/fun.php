@@ -1,5 +1,5 @@
 <?php 
-    $cal = parseInt($_POST["value"]);
+    $cal = $_POST["value"];
     $c =1;
     while($c!=13)
     {
