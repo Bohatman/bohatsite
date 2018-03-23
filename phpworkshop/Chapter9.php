@@ -18,6 +18,7 @@ if($_SERVER['REQUEST_METHOD']=="post" and isset($_POST['Go'])){
 function wF(){
     $handle2 = fopen("text.txt","w");
     fputs($handle2, "<br> Add Add Add");
+    fclose($handle2);
 
 }
 ?>
