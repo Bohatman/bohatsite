@@ -9,6 +9,7 @@
 $handle1=fopen('text.txt','r');
 $content = fread($handle1, 50);
 echo $content;
+fclose($handle1);
 ?>
 </body>
 </html>
