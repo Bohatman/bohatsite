@@ -81,12 +81,12 @@
     </form>
     <form class="login-form">
         <font style="color: gray;font-size: 8px" id="nameS"></font>
-        <input type="text" placeholder="name" id="nameBox" onkeypress="nameChecker();"/>
+        <input type="text" placeholder="name" id="nameBox" oninput="nameChecker();"/>
         <font style="color: gray;font-size: 8px" id="passwordS"></font>
-        <input type="password" placeholder="password" id="passwordBox" onkeypress="passwordChecker();"/>
+        <input type="password" placeholder="password" id="passwordBox" oninput="passwordChecker();"/>
         <font style="color: gray;font-size: 8px" id="emailS"></font>
-        <input type="text" placeholder="email address" id="emailBox" onkeypress="emailChecker();" />
-        <button>ตรวจสอบ</button>
+        <input type="text" placeholder="email address" id="emailBox" oninput="emailChecker();" />
+        <button onclick="summit();">ตรวจสอบ</button>
         
     </form>
   </div>
