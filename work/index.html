@@ -10,7 +10,7 @@
       <link rel="stylesheet" href="css/style.css">
 
       <script>
-          let nameReg = /^([A-z])$/;
+          let nameReg = /^[u0E01-u0E5B]{3,16}$/;
           let emailReg = /^([A-Za-z0-9_\.-]+)@([\dA-Za-z\.-]+)\.([A-Za-z\.]{2,6})$/;
           let passwordReg = /^[a-z0-9]$/;
           function passwordChecker(){
