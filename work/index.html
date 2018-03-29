@@ -10,7 +10,7 @@
       <link rel="stylesheet" href="css/style.css">
 
       <script>
-          let name = /^([A-Za-z])$/;
+          let nameReg = /^([A-Za-z])$/;
           let emailReg = /^([A-Za-z0-9_\.-]+)@([\dA-Za-z\.-]+)\.([A-Za-z\.]{2,6})$/;
           let passwordReg = /^(?=.*[0-9]+.*)(?=.*[a-zA-Z]+.*)])(?=.*[!@#$%^&amp;*()_+}{&quot;:;'?/&gt;.&lt;,])[0-9a-zA-Z]{6,20}$/;
           function passwordChecker(){
@@ -22,6 +22,18 @@
               else{
                 document.getElementById("passwordBox").style.color= "red";
                 document.getElementById("passwordS").innerHTML = "กรุณาใส่รหัสผ่านประกอบด้วย ตัวเลข พิมพ์เล็ก พิมพ์ใหญ่ และอักษรพิเศษ";
+      
+              }
+          }
+          function nameChecker(){
+              var inputname = document.getElementById("nameBox").value;
+              if(nameReg.test(inputpassword)){
+                document.getElementById("nameBox").style.color= "green";
+                document.getElementById("nameS").innerHTML ="";
+              }
+              else{
+                document.getElementById("nameBox").style.color= "red";
+                document.getElementById("nameS").innerHTML = "ห้ามมีตัวอักษรพิเศษหรือช่องว่าง";
       
               }
       
@@ -52,7 +64,8 @@
 
     </form>
     <form class="login-form">
-        <input type="text" placeholder="name"/>
+        <font style="color: gray;font-size: 8px" id="nameS"></font>
+        <input type="text" placeholder="name" id="nameBox"/>
         <font style="color: gray;font-size: 8px" id="passwordS"></font>
         <input type="password" placeholder="password" id="passwordBox" onkeypress="passwordChecker();"/>
         <font style="color: gray;font-size: 8px" id="emailS"></font>
