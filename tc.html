@@ -1,0 +1,46 @@
+<html>
+<head>
+    <meta charset="utf-8">
+<script>
+    let emailReg = /^([A-Za-z0-9_\.-]+)@([\dA-Za-z\.-]+)\.([A-Za-z\.]{2,6})$/;
+    let passwordReg = /^([a-zA-Z]+|[0-9]+|[.\+*?[^]$(){}=!<>|:-]+){9,16}$/;
+    function passwordChecker(){
+        var inputpassword = document.getElementById("password").value;
+        if(passwordReg.test(inputpassword)){
+            document.getElementById("checker02").innerHTML = "ถูกต้อง";
+            document.getElementById("checker02").setAttribute("color","green");
+
+        }
+        else{
+            document.getElementById("checker02").innerHTML = "ผิด";
+            document.getElementById("checker02").setAttribute("color","red");
+
+        }
+
+    }
+    function emailChecker(){
+       var inputemail = document.getElementById("email").value;
+      
+        if(emailReg.test(inputemail)){
+            document.getElementById("checker").innerHTML = "ถูกต้อง";
+            document.getElementById("checker").setAttribute("color","green");
+
+        }
+        else{
+            document.getElementById("checker").innerHTML = "ผิด";
+            document.getElementById("checker").setAttribute("color","red");
+
+        }
+    }
+
+</script>
+</head>
+<body>
+    <div >
+ <input type="text" id="email" onkeypress="emailChecker();"><font id="checker">กรุณากรอกอีเมล์</font>
+ <br>
+ <input type="password" id="password" onkeypress="passwordChecker();"><font id="checker02">กรุณากรอกอีเมล์</font>        
+</div>
+
+</body>
+</html>
