@@ -3,26 +3,40 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>Flat HTML5/CSS3 Login Form</title>
+  <title>งาน</title>
   
   
   
       <link rel="stylesheet" href="css/style.css">
 
       <script>
+          var a=false;
+          var b=false;
+          var c=false;
           let nameReg = /^[a-zA-Zก-ฮะ-์]{5,}$/;
           let emailReg = /^([A-Za-z0-9_\.-]+)@([\dA-Za-z\.-]+)\.([A-Za-z\.]{2,6})$/;
           let passwordReg = /^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$%^&*-]).{8,}$/;
+          function summit(){
+            if(a&&b&&c){
+              alert("ข้อมูลถูกต้องตาม Regular Expressions");
+            }
+            else{
+
+              alert("กรุณาแก้ไขข้อมูล");
+            }
+
+          }
           function passwordChecker(){
               var inputpassword = document.getElementById("passwordBox").value;
               if(passwordReg.test(inputpassword)){
                 document.getElementById("passwordBox").style.color= "green";
                 document.getElementById("passwordS").innerHTML ="";
+                a=true;
               }
               else{
                 document.getElementById("passwordBox").style.color= "red";
                 document.getElementById("passwordS").innerHTML = "กรุณาใส่รหัสผ่านประกอบด้วย ตัวเลข พิมพ์เล็ก พิมพ์ใหญ่ และอักษรพิเศษ";
-      
+                a=false;
               }
           }
           function nameChecker(){
@@ -30,10 +44,12 @@
               if(nameReg.test(inputname)){
                 document.getElementById("nameBox").style.color= "green";
                 document.getElementById("nameS").innerHTML ="";
+                b=true;
               }
               else{
                 document.getElementById("nameBox").style.color= "red";
                 document.getElementById("nameS").innerHTML = "ห้ามมีตัวอักษรพิเศษหรือช่องว่าง";
+                b=false;
       
               }
       
@@ -44,10 +60,12 @@
               if(emailReg.test(inputemail)){
                   document.getElementById("emailBox").style.color= "green";
                   document.getElementById("emailS").innerHTML ="";
+                  c=true;
               }
               else{
                   document.getElementById("emailBox").style.color = "red";
                   document.getElementById("emailS").innerHTML = "กรุณาใส่อีเมล์ให้ถูกต้อง";
+                  c=false;
               }
           }
       
@@ -68,7 +86,7 @@
         <input type="password" placeholder="password" id="passwordBox" onkeypress="passwordChecker();"/>
         <font style="color: gray;font-size: 8px" id="emailS"></font>
         <input type="text" placeholder="email address" id="emailBox" onkeypress="emailChecker();" />
-        <button>create</button>
+        <button>ตรวจสอบ</button>
         
     </form>
   </div>
