@@ -2,101 +2,315 @@
     <head>
         <meta charset="UTF-8" \>    
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-      <title>Bootstrap</title>  
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+      <title>น้องก้อนมาแล้ว</title>  
     </head>
     <body>
-        <div class="container">
+            <div class="container">
+
+            <nav class="navbar navbar-default">
+                    <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed"
+                    data-toggle="collapse" data-target="#collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    
+                    </button> <a class="navbar-brand" href="#">สวัสดี คุณพุฒิพงศ์ สุวรรณาภรณ์กุล</a>
+                    </div>
+                    <div class="collapse navbar-collapse" id="collapse">
+                    <ul class="nav navbar-nav">
+                    <li><a href="#">หน้าแรก</a></li>
+                    <li><a href="#">หน้าสอง</a></li>
+                    <li class="active"><a href="#">การจัดการรายชื่อนักศึกษา</a></li>
+                    </ul>
+                    </div>
+                    </nav>
+                    <ol class="breadcrumb">
+                            <li><a href="#">หน้าแรก</a></li>
+                            <li class="active">การจัดการรายชื่อนักศึกษา</li>
+                            </ol>
+                            <div class="alert alert-success">
+                                    <strong>Success!</strong> บันทึกข้อมูลเรียบร้อยแล้ว</div>
             <form>
                 <h1>การจัดการรายชื่อนักศึกษา</h1>
             </form>
-            <form>
-                <div class="form-group">
-                        <div class="form-inline">
-                                <button type="button" class="btn btn-success">อนุมัติ</button>
-                                <button type="button" class="btn btn-danger">ไม่อนุมัติ</button>
-                            </div>
-                    <table class="table table-bordered">
-                        <thead>
-                            <tr>
-                                <th>#</th>
-                                <th>รูปประจำตัว</th>
-                                <th>ชื่อ</th>
-                                <th>นามสกุล</th>
-                                <th>อีเมล์</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td class="col-sm-1"><input type="checkbox"></td>
-                                <td class="col-sm-2"><img class="img-circle img-responsive" src="https://pbs.twimg.com/profile_images/959272340113604608/F4itBB1G_400x400.jpg" height="50%" width="50%"></td>
-                                <td class="col-sm-3">ปัญสิกรณ์</td>
-                                <td class="col-sm-3">ติยะกร</td>
-                                <td class="col-sm-3">punbnk48@bnk48.com</td>
-                            </tr>
-                            <tr class="success">
-                                    <td class="col-sm-1"><input type="checkbox"></td>
-                                    <td class="col-sm-2"><img class="img-circle img-responsive" height="20%" src="https://pbs.twimg.com/profile_images/959272340113604608/F4itBB1G_400x400.jpg" height="50%" width="50%"></td>
-                                    <td class="col-sm-3">ก้อน</td>
-                                    <td class="col-sm-3">ก้อนก้อน</td>
-                                    <td class="col-sm-3">konoun48@bnk48.com</td>
-                                </tr>
-                                <tr>
-                                        <td class="col-sm-1"><input type="checkbox"></td>
-                                        <td class="col-sm-2"><img class="img-circle img-responsive" height="20%" src="https://pbs.twimg.com/profile_images/959272340113604608/F4itBB1G_400x400.jpg" height="50%" width="50%"></td>
-                                        <td class="col-sm-3">ฉลามมาแล้ว</td>
-                                        <td class="col-sm-3">นะจ่ะ</td>
-                                        <td class="col-sm-3">shark48@bnk48.com</td>
-                                    </tr>
-                                    <tr>
-                                            <td class="col-sm-1"><input type="checkbox"></td>
-                                            <td class="col-sm-2"><img class="img-circle img-responsive" height="20%" src="https://pbs.twimg.com/profile_images/959272340113604608/F4itBB1G_400x400.jpg" height="50%" width="50%"></td>
-                                            <td class="col-sm-3">ฉลาม</td>
-                                            <td class="col-sm-3">ที่เป็นก้อนๆ</td>
-                                            <td class="col-sm-3">punbnk48@bnk48.com</td>
-                                        </tr>
-                        </tbody>    
-                    </table>
-                </div>
+            <ul class="nav nav-tabs">
+                    <li class="active"><a data-toggle="tab" href="#home">การจัดการรายชื่อนักศึกษา</a></li>
+                    <li><a data-toggle="tab" href="#menu1">เพิ่มนักศึกษา</a></li>
+                 
+                    </ul>
+                    <div class="tab-content">
+                    <div id="home" class="tab-pane fade in active">
+                            <form>
+                                    <div class="form-group">
+                                            <div class="form-inline">
+                                                      <div class="col-sm-7">
+                                                    <button type="button" class="btn btn-success">อนุมัติ</button>
+                                                    <button type="button" class="btn btn-danger">ไม่อนุมัติ</button>
+                                                    <div class="btn-group"> 
+                                                    <div class="dropdown">
+                                                            <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">
+                                                            action
+                                                            <span class="caret"></span>       
+                                                            </button>
+                                                            <ul class="dropdown-menu">
+                                                            <li><a href="#">เรียกดู</a></li>
+                                                            <li><a href="#">แก้ไข</a></li>
+                                                            <li><a href="#">ลบ</a></li>
+                                                            </ul>
+                                                            </div>
 
-            </form>
-            <form class= "form-horizontal" >
-                <h3>เพิ่มนักศึกษา</h3>
-                <div class="form-group">
-                <label for="txt_email" class="col-sm-2 control-label">id</label>
-                <div class="col-sm-10">
-                <input type="text" class="form-control" id="txt_id" readonly placeholder="123">
-                </div>
-                </div>
-                <div class="form-group">
-                        <label class="col-sm-2 control-label">ชื่อ</label>
-                        <div class="col-sm-10">
-                        <input type="text" class="form-control" id="txt_name" placeholder="ชื่อ">
-                        </div>
-                        </div>
-                        <div class="form-group">
-                                <label class="col-sm-2 control-label">นามสกุล</label>
-                                <div class="col-sm-10">
-                                <input type="text" class="form-control" id="txt_lastname" placeholder="นามสกุล">
-                                </div>
-                                </div>
+                                                    </div>
+                                                </div>
+                                                    <div class="input-group col-sm-offset-3 col-sm-2">
+                                                            <input type="text" class="form-control" placeholder="Search for...">
+                                                            <span class="input-group-btn">
+                                                            <button class="btn btn-primary" type="button">
+                                                            <span class="glyphicon glyphicon-search"></span>Go!
+                                                            </button>
+                                                            </span>
+                                                            </div>
+                                                </div>
+                                        <table class="table table-bordered">
+                                            <thead>
+                                                <tr>
+                                                    <th>#</th>
+                                                    <th>รูปประจำตัว</th>
+                                                    <th>ชื่อ</th>
+                                                    <th>นามสกุล</th>
+                                                    <th>อีเมล์</th>
+                                                    <th>action</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td class="col-sm-1"><input type="checkbox"></td>
+                                                    <td class="col-sm-1"><img class="img-circle img-responsive" src="https://pbs.twimg.com/profile_images/959272340113604608/F4itBB1G_400x400.jpg" height="50%" width="50%"></td>
+                                                    <td class="col-sm-2">ปัญสิกรณ์</td>
+                                                    <td class="col-sm-2">ติยะกร</td>
+                                                    <td class="col-sm-2">punbnk48@bnk48.com</td>
+                                                    <td class="col-sm-3"><div class="btn-group">
+                                                            <button type="button" class="btn btn-primary glyphicon glyphicon-eye-open" data-toggle="modal" data-target="#view"> เรียกดู</button>
+                                                            <button type="button" class="btn btn-success glyphicon glyphicon-pencil" data-toggle="modal" data-target="#edit"> แก้ไข</button>
+                                                            <button type="button" class="btn btn-danger glyphicon glyphicon-trash" data-toggle="modal" data-target="#myModal"> ลบ</button>
+                                                            </div></td>
+                                                </tr>
+                                                <tr class="success">
+                                                        <td class="col-sm-1"><input type="checkbox"></td>
+                                                        <td class="col-sm-1"><img class="img-circle img-responsive" height="20%" src="https://pbs.twimg.com/profile_images/959272340113604608/F4itBB1G_400x400.jpg" height="50%" width="50%"></td>
+                                                        <td class="col-sm-2">ก้อน</td>
+                                                        <td class="col-sm-2">ก้อนก้อน</td>
+                                                        <td class="col-sm-2">konoun48@bnk48.com</td>
+                                                        <td class="col-sm-3"><div class="btn-group">
+                                                                <button type="button" class="btn btn-primary glyphicon glyphicon-eye-open" data-toggle="modal" data-target="#view"> เรียกดู</button>
+                                                                <button type="button" class="btn btn-success glyphicon glyphicon-pencil" data-toggle="modal" data-target="#edit"> แก้ไข</button>
+                                                                <button type="button" class="btn btn-danger glyphicon glyphicon-trash" data-toggle="modal" data-target="#myModal"> ลบ</button>
+                                                                </div></td>
+                                                    </tr>
+                                                    <tr>
+                                                            <td class="col-sm-1"><input type="checkbox"></td>
+                                                            <td class="col-sm-1"><img class="img-circle img-responsive" height="20%" src="https://pbs.twimg.com/profile_images/959272340113604608/F4itBB1G_400x400.jpg" height="50%" width="50%"></td>
+                                                            <td class="col-sm-2">ฉลามมาแล้ว<span class="label label-danger">ออกจากราชการ</span></td>
+                                                            <td class="col-sm-2">นะจ่ะ</td>
+                                                            <td class="col-sm-2">shark48@bnk48.com</td>
+                                                            <td class="col-sm-3"><div class="btn-group">
+                                                                    <button type="button" class="btn btn-primary glyphicon glyphicon-eye-open" data-toggle="modal" data-target="#view"> เรียกดู</button>
+                                                                    <button type="button" class="btn btn-success glyphicon glyphicon-pencil" data-toggle="modal" data-target="#edit"> แก้ไข</button>
+                                                                    <button type="button" class="btn btn-danger glyphicon glyphicon-trash" data-toggle="modal" data-target="#myModal">  ลบ</button>
+                                                                    </div></td>
+                                                        </tr>
+                                                        <tr>
+                                                                <td class="col-sm-1"><input type="checkbox"></td>
+                                                                <td class="col-sm-1"><img class="img-circle img-responsive" height="20%" src="https://pbs.twimg.com/profile_images/959272340113604608/F4itBB1G_400x400.jpg" height="50%" width="50%"></td>
+                                                                <td class="col-sm-2">ฉลาม</td>
+                                                                <td class="col-sm-2">ที่เป็นก้อนๆ</td>
+                                                                <td class="col-sm-2">punbnk48@bnk48.com</td>
+                                                                <td class="col-sm-3"><div class="btn-group">
+                                                                        <button type="button" class="btn btn-primary glyphicon glyphicon-eye-open" data-toggle="modal" data-target="#view"> เรียกดู</button>
+                                                                        <button type="button" class="btn btn-success glyphicon glyphicon-pencil" data-toggle="modal" data-target="#edit"> แก้ไข</button>
+                                                                        <button type="button" class="btn btn-danger glyphicon glyphicon-trash" data-toggle="modal" data-target="#myModal"> ลบ</button>
+                                                                        </div></td>
+                                                            </tr>
+                                            </tbody>    
+                                        </table>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-offset-9 col-sm-3">
+                                                <ul class="pagination">
+                                                        <li><a href="#"><span>&laquo;</span></a></li>
+                                                        <li><a href="#">1</a></li>
+                                                        <li class="active"><a href="#">2</a></li>
+                                                        <li><a href="#">3</a></li>
+                                                        <li><a href="#">4</a></li>
+                                                        <li><a href="#">5</a></li>
+                                                        <li><a href="#"><span>&raquo;</span></a></li>
+                                                        </ul>
+                                        </div>
+                                    </div>
+                                </form>
+                    </div>
+                    <div id="menu1" class="tab-pane fade">
 
-                
-                <div class="form-group">
-                        <label class="col-sm-2 control-label">อีเมล์</label>
-                        <div class="col-sm-10">
-                        <input type="email" class="form-control" id="txt_email" placeholder="อีเมล์">
-                        </div>
-                        </div>
-                <div class="form-group">
-                <div class="col-sm-offset-2 col-sm-10">
-                <button type="submit" class="btn btn-primary">Submit</button>
-                </div>
-                </div>
-                </form>
+                            <form class= "form-horizontal" >
+                                    <h3>เพิ่มนักศึกษา</h3>
+                                    <div class="form-group">
+                                    <label for="txt_email" class="col-sm-1 control-label">id</label>
+                                    <div class="col-sm-5">
+                                    <input type="text" class="form-control" id="txt_id" readonly placeholder="123">
+                                    </div>
+                                    </div>
+                                    <div class="form-group">
+                                            <label class="col-sm-1 control-label">ชื่อ</label>
+                                            <div class="col-sm-5">
+                                            <input type="text" class="form-control" id="txt_name" placeholder="ชื่อ">
+                                            </div>
+                                            </div>
+                    
+                                            <div class="form-group has-error">
+                                                    <label class="col-sm-1 control-label">นามสกุล</label>
+                                                    <div class="col-sm-5">
+                                                    <input type="text" class="form-control" id="txt_lastname" placeholder="นามสกุล">
+                                                    </div>
+                                                    </div>
+                    
+                                    
+                                    <div class="form-group">
+                                            <label class="col-sm-1 control-label">อีเมล์</label>
+                                            <div class="col-sm-5">
+                                            <input type="email" class="form-control" id="txt_email" placeholder="อีเมล์">
+                                            </div>
+                                            </div>
+                                    <div class="form-group">
+                                    <div class="col-sm-offset-1 col-sm-11">
+                                    <button type="submit" class="btn btn-primary">Submit</button>
+                                    </div>
+                                    </div>
+                                    </form>
+                    </div>
+
+                    </div>
+                    
+          
+           
 
         </div>
+        <div id="edit" class="modal fade" role="dialog">
+                <div class="modal-dialog">
+                  <!-- Modal content-->
+                  <div class="modal-content">
+                      
+                    <div class="modal-body">
+                      <p>คุณยืนยันจะแก้ไขข้อมูลนี้</p>
+                      <form class= "form-horizontal" >
+                            <h3>แก้ไข</h3>
+                            <div class="form-group">
+                            <label for="txt_email" class="col-sm-2 control-label">id</label>
+                            <div class="col-sm-10">
+                            <input type="text" class="form-control" id="txt_id" readonly placeholder="123">
+                            </div>
+                            </div>
+                            <div class="form-group">
+                                    <label class="col-sm-2 control-label">ชื่อ</label>
+                                    <div class="col-sm-10">
+                                    <input type="text" class="form-control" id="txt_name" placeholder="ชื่อ">
+                                    </div>
+                                    </div>
+            
+                                    <div class="form-group has-error">
+                                            <label class="col-sm-2 control-label">นามสกุล</label>
+                                            <div class="col-sm-10">
+                                            <input type="text" class="form-control" id="txt_lastname" placeholder="นามสกุล">
+                                            </div>
+                                            </div>
+            
+                            
+                            <div class="form-group">
+                                    <label class="col-sm-2 control-label">อีเมล์</label>
+                                    <div class="col-sm-10">
+                                    <input type="email" class="form-control" id="txt_email" placeholder="อีเมล์">
+                                    </div>
+                                    </div>
+                            </form>
+                    </div>
+
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-primary">ยืนยัน</button>
+                      <button type="button" class="btn btn-danger" data-dismiss="modal">ยกเลิก</button>
+                    </div>
+
+                  </div>
+              
+                </div>
+              </div>
+              <div id="view" class="modal fade" role="dialog">
+                    <div class="modal-dialog">
+                      <!-- Modal content-->
+                      <div class="modal-content">
+                          
+                        <div class="modal-body">
+                        
+                          <form class= "form-horizontal" >
+                                <h3>ข้อมูล</h3>
+                                <div class="form-group">
+                                <label for="txt_email" class="col-sm-2 control-label">id</label>
+                                <div class="col-sm-10">
+                                <input type="text" class="form-control" id="txt_id" readonly placeholder="123">
+                                </div>
+                                </div>
+                                <div class="form-group">
+                                        <label class="col-sm-2 control-label">ชื่อ</label>
+                                        <div class="col-sm-10">
+                                        <input type="text" class="form-control" id="txt_name" placeholder="ชื่อ" readonly>
+                                        </div>
+                                        </div>
+                
+                                        <div class="form-group has-error">
+                                                <label class="col-sm-2 control-label">นามสกุล</label>
+                                                <div class="col-sm-10">
+                                                <input type="text" class="form-control" id="txt_lastname" placeholder="นามสกุล" readonly>
+                                                </div>
+                                                </div>
+                
+                                
+                                <div class="form-group">
+                                        <label class="col-sm-2 control-label">อีเมล์</label>
+                                        <div class="col-sm-10">
+                                        <input type="email" class="form-control" id="txt_email" placeholder="อีเมล์" readonly>
+                                        </div>
+                                        </div>
+                                </form>
+                        </div>
+    
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-primary">ยืนยัน</button>
+                          <button type="button" class="btn btn-danger" data-dismiss="modal">ยกเลิก</button>
+                        </div>
+    
+                      </div>
+                  
+                    </div>
+                  </div>
+        <div id="myModal" class="modal fade" role="dialog">
+                <div class="modal-dialog">
+                  <!-- Modal content-->
+                  <div class="modal-content">
+
+                    <div class="modal-body">
+                      <p>คุณยืนยันจะลบข้อมูลนี้</p>
+                    </div>
+
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-primary">ยืนยัน</button>
+                      <button type="button" class="btn btn-danger" data-dismiss="modal">ยกเลิก</button>
+                    </div>
+
+                  </div>
+              
+                </div>
+              </div>
     </body>
 </html>
