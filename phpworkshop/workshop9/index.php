@@ -12,18 +12,28 @@
                     <!-- เมนู!-->
                     <?php include "nav.html";?>
                     <!-- เมนู!-->
+                        <div name = "alertbox">
+                                <?php   
+                                        if(!empty($_POST["txt_username"])&&!empty($_POST["txt_password"])){
+                                                $username = $_POST["txt_username"];
+                                                if($username== "admin"&& $_POST["txt_password"] == "enet"){
+                                                        echo "Hi";
+                                                }
 
-                        <form class= "form-horizontal" >
+                                        }
+                                ?>
+                        </div>
+                        <form class= "form-horizontal" action="" method="post">
                                 <div class="form-group">
                                         <label for="txt_username" class="col-sm-2 control-label"> Username:</label>
                                 <div class="col-sm-5">
-                                        <input type="text" class="form-control" id="txt_username" placeholder="Username">
+                                        <input type="text" class="form-control" name="txt_username" placeholder="Username">
                                 </div>
                                 </div>
                         <div class="form-group">
                                 <label for="txt_password" class="col-sm-2 control-label"> Password:</label>
                         <div class="col-sm-5">
-                                <input type="password" class="form-control" id="txt_password" placeholder="Password">
+                                <input type="password" class="form-control" name="txt_password" placeholder="Password">
                         </div>
                         </div>
                         <div class="form-group">
