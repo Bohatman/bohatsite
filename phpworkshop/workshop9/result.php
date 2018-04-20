@@ -37,7 +37,8 @@
                             for($i=0;$i<$c;$i++){
                                 if($i==$c-1){
                                 echo $_POST["event"][$i];}
-                                echo $_POST["event"][$i].",";
+                                else{
+                                echo $_POST["event"][$i].",";}
                             }
 
                         }
