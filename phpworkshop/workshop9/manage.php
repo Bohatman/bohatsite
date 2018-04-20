@@ -22,19 +22,19 @@
                         </div>
                         </div>
                         <div class="form-group">
-                            <label for="txt_lastname" class="col-sm-2 control-label">นามสกุล :</label>
+                            <label for="txt_lastname" class="col-sm-2 control-label">นามสกุล     :</label>
                         <div class="col-sm-5">
                             <input type="text" class="form-control" id="txt_lastname" placeholder="นามสกุล">
                         </div>
                         </div>
                         <div class="form-group">
                             <label for="txt_email" class="col-sm-2 control-label"> Email address</label>
-                        <div class="col-sm-10">
+                        <div class="col-sm-5">
                             <input type="email" class="form-control" id="txt_email" placeholder="Email">
                         </div>
                         </div>
                         <div class="form-group">
-                        <div class="col-sm-offset-2 col-sm-10">
+                        <div class="col-sm-offset-2 col-sm-5">
                             <div class="checkbox">
                             <label><input type="checkbox"> Check me out</label>
                         </div>
