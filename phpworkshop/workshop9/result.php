@@ -30,6 +30,7 @@
                             
                            $number=$_POST["txt_number"];
                             $name = $name." ".$_POST["txt_lastname"];
+                            echo "<center>";
                             echo "$name"."<br>";
                             echo "เบอร์มือถือ".$_POST["txt_number"]."e-Mail:".$_POST["txt_email"]."<br>";
                             echo "กิจกรรมที่ชอบคือ";
@@ -40,6 +41,7 @@
                                 else{
                                 echo $_POST["event"][$i].",";}
                             }
+                            echo "</center>";
 
                         }
                     ?>
