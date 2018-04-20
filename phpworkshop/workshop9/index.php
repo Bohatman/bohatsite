@@ -31,7 +31,7 @@
                                                         include "login.html"; 
                                                 }
                                                 else {
-                                                        include "footer.php"; 
+                                                        include "slogin.php"; 
                                                 }
 
                                         }
