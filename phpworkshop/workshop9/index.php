@@ -19,6 +19,7 @@
                     <!-- เมนู!-->
                     <?php include "nav.html";?>
                     <!-- เมนู!-->
+
                         <div>
                                 <?php   
                                         if(!empty($_POST["txt_username"])&&!empty($_POST["txt_password"])){
@@ -27,40 +28,19 @@
                                                         echo "<div class=\"row\">";
                                                         echo "<div class=\"alert alert-danger col-sm-offset-2 col-sm-5\">";
                                                         echo "Username และ/หรือ Password ไม่ถูกต้อง</div></div>";
+                                                        ?>    <?php include "login.html";?> <?php
                                                 }
                                                 else {
-                                                        ?>
-                                                        <script>
-                                                        $("#mainJa").html("ควย");
-                                                        </script>
-                                                <?php     
+                                                        
+                                                }
+                                                else{
+                                                    ?>    <?php include "login.html";?> <?php
                                                 }
 
                                         }
                                 ?>
-                        </div>
+                
 
-                        <div id = "mainJa">
-                        <form class= "form-horizontal" action="" method="post">
-                                <div class="form-group">
-                                        <label for="txt_username" class="col-sm-2 control-label"> Username:</label>
-                                <div class="col-sm-5">
-                                        <input type="text" class="form-control" name="txt_username" placeholder="Username">
-                                </div>
-                                </div>
-                        <div class="form-group">
-                                <label for="txt_password" class="col-sm-2 control-label"> Password:</label>
-                        <div class="col-sm-5">
-                                <input type="password" class="form-control" name="txt_password" placeholder="Password">
-                        </div>
-                        </div>
-                        <div class="form-group">
-                                <div class="col-sm-offset-2 col-sm-10">
-                                <button type="submit" class="btn btn-default"><span class="glyphicon glyphicon-pencil"></span> Login</button>
-                        </div>
-                        </div>
-                        </form>
-                                </div>
 
                     <!-- เครดิด!-->
                     <?php include "footer.php";?>
