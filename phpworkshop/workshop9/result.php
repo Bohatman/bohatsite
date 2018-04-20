@@ -19,18 +19,18 @@
                         }
                         else{
                             $name= $_POST["txt_name"];
-                          //  $sex= $_POST["sex"];
-                            /*
+                            $sex= $_POST["sex"];
+                            
                             if($_POST["sex"]=="male"){
                                 $name="นาย".$name;
                             }
                             else{
                                 $name="นาง".$name;
                             }
-                            */
-                           // $number=$_POST["txt_number"]
+                            
+                           $number=$_POST["txt_number"];
                             echo "$name";
-                           // echo "$sex";
+                            echo "$sex";
                         }
                     ?>
 
