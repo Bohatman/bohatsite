@@ -12,7 +12,7 @@
                     <!-- เมนู!-->
                     <?php include "nav.html";?>
                     <!-- เมนู!-->
-                        <div name = "alertbox" class="col-sm-offset-2 col-sm-5">
+                        <div name = "alertbox" class="col-sm-offset-2 col-sm-5 col-sm-5">
                                 <?php   
                                         if(!empty($_POST["txt_username"])&&!empty($_POST["txt_password"])){
                                                 $username = $_POST["txt_username"];
