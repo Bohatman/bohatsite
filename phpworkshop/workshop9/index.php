@@ -12,7 +12,7 @@
 
             <script>
                 function correct() {
-                        document.getEleentById("L").innerHTML = "1";
+                        
                 }
                 </script>
 
@@ -29,13 +29,15 @@
                                                         echo "Username และ/หรือ Password ไม่ถูกต้อง</div></div>";
                                                 }
                                                 else {
-                                                        echo '<script type="text/javascript">','correct();','</script>';     
+                                                        ?>
+                                                <script type="text/javascript">$('#divId').hide()</script>
+                                                <?php     
                                                 }
 
                                         }
                                 ?>
                         </div>
-                        <form class= "form-horizontal" action="" method="post" id="L">
+                        <form class= "form-horizontal" action="" method="post" id="main">
                                 <div class="form-group">
                                         <label for="txt_username" class="col-sm-2 control-label"> Username:</label>
                                 <div class="col-sm-5">
