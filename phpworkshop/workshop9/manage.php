@@ -18,13 +18,13 @@
                         <div class="form-group">
                             <label for="txt_name" class="col-sm-2 control-label">ชื่อ :</label>
                         <div class="col-sm-5">
-                            <input type="text" class="form-control" id="txt_name" placeholder="ชื่อ">
+                            <input type="text" class="form-control" name="txt_name" placeholder="ชื่อ">
                         </div>
                         </div>
                         <div class="form-group">
                             <label for="txt_lastname" class="col-sm-2 control-label">นามสกุล     :</label>
                         <div class="col-sm-5">  
-                            <input type="text" class="form-control" id="txt_lastname" placeholder="นามสกุล">
+                            <input type="text" class="form-control" name="txt_lastname" placeholder="นามสกุล">
                         </div>
                         </div>
                         <div class="form-group">
@@ -35,27 +35,27 @@
                         <div class="form-group">
                             <label for="txt_number" class="col-sm-2 control-label">เบอร์โทร:</label>
                         <div class="col-sm-5">
-                            <input type="text" class="form-control" id="txt_number" placeholder="เบอร์โทร">
+                            <input type="text" class="form-control" name="txt_number" placeholder="เบอร์โทร">
                         </div>
                         </div>
                         <div class="form-group">
                             <label for="txt_email" class="col-sm-2 control-label">e-Mail:</label>
                         <div class="col-sm-5">
-                            <input type="email" class="form-control" id="txt_email" placeholder="e-Mail">
+                            <input type="email" class="form-control" name="txt_email" placeholder="e-Mail">
                         </div>
                         </div>
                         <div class="form-group">
                         <label for="txt_event" class="col-sm-2 control-label">กิจกรรม:</label>
                             <div class="checkbox">
                                 <div class="row col-sm-offset-2">
-                            <label><input type="checkbox" value="book">อ่านหนังสือ</label>
-                            <label><input type="checkbox" value="movie">ดูภาพยนตร์</label>
+                            <label><input type="checkbox" name="event[]" value="book">อ่านหนังสือ</label>
+                            <label><input type="checkbox" name="event[]" value="movie">ดูภาพยนตร์</label>
                             <label><input type="checkbox" value="music">ฟังเพลง</label>
                                 </div>
                             <div class ="row col-sm-offset-2">
-                            <label><input type="checkbox" value="sport">เล่นกีฬา</label>
-                            <label><input type="checkbox" value="travel">ท่องเที่ยว</label>
-                            <label><input type="checkbox" valie="Other">หาความรู้เพิ่มเติม</label>
+                            <label><input type="checkbox" name="event[]" value="sport">เล่นกีฬา</label>
+                            <label><input type="checkbox" name="event[]" value="travel">ท่องเที่ยว</label>
+                            <label><input type="checkbox" name="event[]" valie="Other">หาความรู้เพิ่มเติม</label>
                                 </div>
                         </div>
                         </div>
