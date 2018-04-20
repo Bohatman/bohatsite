@@ -48,14 +48,14 @@
                         <label for="txt_event" class="col-sm-2 control-label">กิจกรรม:</label>
                             <div class="checkbox">
                                 <div class="row col-sm-offset-2">
-                            <label><input type="checkbox">อ่านหนังสือ</label>
-                            <label><input type="checkbox">ดูภาพยนตร์</label>
-                            <label><input type="checkbox">ฟังเพลง</label>
+                            <label><input type="checkbox" value="book">อ่านหนังสือ</label>
+                            <label><input type="checkbox" value="movie">ดูภาพยนตร์</label>
+                            <label><input type="checkbox" value="music">ฟังเพลง</label>
                                 </div>
                             <div class ="row col-sm-offset-2">
-                            <label><input type="checkbox">เล่นกีฬา</label>
-                            <label><input type="checkbox">ท่องเที่ยว</label>
-                            <label><input type="checkbox">หาความรู้เพิ่มเติม</label>
+                            <label><input type="checkbox" value="sport">เล่นกีฬา</label>
+                            <label><input type="checkbox" value="travel">ท่องเที่ยว</label>
+                            <label><input type="checkbox" valie="Other">หาความรู้เพิ่มเติม</label>
                                 </div>
                         </div>
                         </div>
