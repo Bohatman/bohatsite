@@ -33,6 +33,12 @@
                             <label class="radio-inline"><input type="radio" name="sex" value="female">หญิง</label>
                         </div>
                         <div class="form-group">
+                            <label for="txt_number" class="col-sm-2 control-label">เบอร์โทร:</label>
+                        <div class="col-sm-5">
+                            <input type="text" class="form-control" id="txt_number" placeholder="เบอร์โทร">
+                        </div>
+                        </div>
+                        <div class="form-group">
                             <label for="txt_email" class="col-sm-2 control-label"> Email address</label>
                         <div class="col-sm-5">
                             <input type="email" class="form-control" id="txt_email" placeholder="Email">
