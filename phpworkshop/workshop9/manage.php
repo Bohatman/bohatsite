@@ -14,7 +14,7 @@
                     <!-- เมนู!-->
                     <?php include "nav.php";?>
                     <!-- เมนู!-->
-                    <form class= "form-horizontal" >
+                    <form class= "form-horizontal" action= "result.php" method="post">
                         <div class="form-group">
                             <label for="txt_name" class="col-sm-2 control-label">ชื่อ :</label>
                         <div class="col-sm-5">
