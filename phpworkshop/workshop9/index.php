@@ -39,7 +39,9 @@
                                         }
                                 ?>
                         </div>
-
+                        <script>
+                                                        $('#main').hide();
+                                                        </script>
                         <div id = "main">
                         <form class= "form-horizontal" action="" method="post">
                                 <div class="form-group">
