@@ -28,7 +28,7 @@
                         </div>
                         <div class="form-group">
                                 <div class="col-sm-offset-2 col-sm-10">
-                                <button type="submit" class="btn btn-default"><span class="glyphicon glyphicon-pencil"></span>Submit</button>
+                                <button type="submit" class="btn btn-default"><span class="glyphicon glyphicon-pencil"></span> Login</button>
                         </div>
                         </div>
                         </form>
