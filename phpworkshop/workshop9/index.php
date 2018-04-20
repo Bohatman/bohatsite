@@ -16,13 +16,13 @@
                         <form class= "form-horizontal" >
                                 <div class="form-group">
                                         <label for="txt_username" class="col-sm-2 control-label"> Username:</label>
-                                <div class="col-sm-10">
+                                <div class="col-sm-5">
                                         <input type="text" class="form-control" id="txt_username" placeholder="Username">
                                 </div>
                                 </div>
                         <div class="form-group">
                                 <label for="txt_password" class="col-sm-2 control-label"> Password:</label>
-                        <div class="col-sm-10">
+                        <div class="col-sm-5">
                                 <input type="password" class="form-control" id="txt_password" placeholder="Password">
                         </div>
                         </div>
