@@ -31,7 +31,7 @@
                                                 else {
                                                         ?>
                                                         <script>
-                                                        $("#mainJa").css("display", "none");
+                                                        $("#mainJa").html="ควย";
                                                         </script>
                                                 <?php     
                                                 }
