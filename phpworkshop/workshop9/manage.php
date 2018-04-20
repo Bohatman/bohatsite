@@ -23,7 +23,7 @@
                         </div>
                         <div class="form-group">
                             <label for="txt_lastname" class="col-sm-2 control-label">นามสกุล     :</label>
-                        <div class="col-sm-5">
+                        <div class="col-sm-5">  
                             <input type="text" class="form-control" id="txt_lastname" placeholder="นามสกุล">
                         </div>
                         </div>
@@ -39,9 +39,9 @@
                         </div>
                         </div>
                         <div class="form-group">
-                            <label for="txt_email" class="col-sm-2 control-label"> Email address</label>
+                            <label for="txt_email" class="col-sm-2 control-label">e-Mail</label>
                         <div class="col-sm-5">
-                            <input type="email" class="form-control" id="txt_email" placeholder="Email">
+                            <input type="email" class="form-control" id="txt_email" placeholder="e-Mail">
                         </div>
                         </div>
                         <div class="form-group">
