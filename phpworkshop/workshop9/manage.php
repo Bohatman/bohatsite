@@ -46,14 +46,21 @@
                         </div>
                         <div class="form-group">
                         <div class="col-sm-offset-2 col-sm-5">
+                        <label for="txt_event" class="col-sm-2 control-label">กิจกรรม:</label>
                             <div class="checkbox">
-                            <label><input type="checkbox"> Check me out</label>
+                            <label><input type="checkbox">อ่านหนังสือ</label>
+                            <label><input type="checkbox">ดูภาพยนตร์</label>
+                            <label><input type="checkbox">ฟังเพลง</label>
+                            <br>
+                            <label><input type="checkbox">เล่นกีฬา</label>
+                            <label><input type="checkbox">ท่องเที่ยว</label>
+                            <label><input type="checkbox">หาความรู้เพิ่มเติม</label>
                         </div>
                         </div>
                         </div>
                         <div class="form-group">
                         <div class="col-sm-offset-2 col-sm-10">
-                            <button type="submit" class="btn btn-default">Submit</button>
+                            <button type="submit" class="btn btn-default">บันทึก</button>
                         </div>
                         </div>
                     </form>
