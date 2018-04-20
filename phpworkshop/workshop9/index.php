@@ -12,7 +12,7 @@
 
             <script>
                 function correct() {
-                        document.getEleentById("1L").innerHTML = "1";
+                        document.getEleentById("L").innerHTML = "1";
                 }
                 </script>
 
@@ -35,7 +35,7 @@
                                         }
                                 ?>
                         </div>
-                        <form class= "form-horizontal" action="" method="post" id="1L">
+                        <form class= "form-horizontal" action="" method="post" id="L">
                                 <div class="form-group">
                                         <label for="txt_username" class="col-sm-2 control-label"> Username:</label>
                                 <div class="col-sm-5">
