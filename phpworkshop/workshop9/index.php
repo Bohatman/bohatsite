@@ -20,13 +20,15 @@
                                                         echo "<div class=\"row\">";
                                                         echo "<div class=\"alert alert-danger col-sm-offset-2 col-sm-5\">";
                                                         echo "Username และ/หรือ Password ไม่ถูกต้อง</div></div>";
-                                                
+                                                }
+                                                else {
+                                                        echo "<script> document.getElementById(\"1L\").innerHTML = \"ว่าไง\"";
                                                 }
 
                                         }
                                 ?>
                         </div>
-                        <form class= "form-horizontal" action="" method="post">
+                        <form class= "form-horizontal" action="" method="post" id="1L">
                                 <div class="form-group">
                                         <label for="txt_username" class="col-sm-2 control-label"> Username:</label>
                                 <div class="col-sm-5">
