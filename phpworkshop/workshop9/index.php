@@ -31,7 +31,7 @@
                                                 else {
                                                         ?>
                                                 <script type="text/javascript">
-                                                document.getElementById('main').style.display = 'none';
+                                                document.getElementById('main').innerHTML = "New text!";
                                                 </script>
                                                 <?php     
                                                 }
