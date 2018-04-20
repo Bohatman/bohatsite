@@ -30,7 +30,10 @@
                                                 }
                                                 else {
                                                         ?>
-                                                <script type="text/javascript">$('#divId').hide()</script>
+                                                <script type="text/javascript">
+                                                alert("Hi");
+                                                document.getElementById('main').style.display = 'none';
+                                                </script>
                                                 <?php     
                                                 }
 
