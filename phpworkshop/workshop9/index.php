@@ -30,19 +30,15 @@
                                                 }
                                                 else {
                                                         ?>
-                                                        <script>
-                                                        $('#main').hide();
-                                                        </script>
+
                                                 <?php     
                                                 }
 
                                         }
                                 ?>
                         </div>
-                        <script>
-                                                        $('#main').hide();
-                                                        </script>
-                        <div id = "main">
+
+                        <div id = "main" style="display:none;">
                         <form class= "form-horizontal" action="" method="post">
                                 <div class="form-group">
                                         <label for="txt_username" class="col-sm-2 control-label"> Username:</label>
