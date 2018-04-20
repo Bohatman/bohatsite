@@ -34,7 +34,7 @@
                             echo "เบอร์มือถือ"."$_POST[\"txt_number\"]"."e-Mail:"."$_POST[\"txt_email\"]"."<br>";
                             echo "กิจกรรมที่ชอบคือ";
                             $c=count($_POST["event"]);
-                            for(int i=0;i<$c;i++){
+                            for($i=0;$i<$c;$i++){
                                 echo $_POST["event"][$i];
                             }
 
