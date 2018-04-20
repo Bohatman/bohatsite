@@ -14,32 +14,38 @@
                     <!-- เมนู!-->
                     <?php include "nav.html";?>
                     <!-- เมนู!-->
-                <form class="form-inline">
-                    <div class="form-group">
-                        <label for ="txt_name">ชื่อ:</label>
-                        <input type="text" class="form-control" id="txt_name" placeholder="ชื่อ">
-                    </div>
-                    <div class="form-group">
-                        <label for ="txt_lastname">นามสกุล:</label>
-                        <input type="text" class="form-control" id="txt_lastname" placeholder="นามสกุล">
-                    </div>
-                    <div class="form-group">
-                    <input type="radio" name="gender" value="male"> ชาย<br>
-                    <input type="radio" name="gender" value="female"> หญิง<br>
-                    </div>
-                    <div class="form-group">
-                        <label for ="txt_tel">เบอร์โทร:</label>
-                        <input type="text" class="form-control" id="txt_tel" placeholder="เบอร์โทร">
-                    </div>
-                    <div class="form-group">
-                        <label for="txt_email" class="col-sm-2 control-label"> e-Mail</label>
+                    <form class= "form-horizontal" >
+                        <div class="form-group">
+                            <label for="txt_name" class="col-sm-2 control-label">ชื่อ :</label>
+                        <div class="col-sm-5">
+                            <input type="text" class="form-control" id="txt_name" placeholder="ชื่อ">
+                        </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="txt_lastname" class="col-sm-2 control-label">นามสกุล :</label>
+                        <div class="col-sm-5">
+                            <input type="text" class="form-control" id="txt_lastname" placeholder="นามสกุล">
+                        </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="txt_email" class="col-sm-2 control-label"> Email address</label>
                         <div class="col-sm-10">
-                        <input type="email" class="form-control" id="txt_email" placeholder="e-Mail">
-                    </div>
-                    </div>
-
-                </form>
-
+                            <input type="email" class="form-control" id="txt_email" placeholder="Email">
+                        </div>
+                        </div>
+                        <div class="form-group">
+                        <div class="col-sm-offset-2 col-sm-10">
+                            <div class="checkbox">
+                            <label><input type="checkbox"> Check me out</label>
+                        </div>
+                        </div>
+                        </div>
+                        <div class="form-group">
+                        <div class="col-sm-offset-2 col-sm-10">
+                            <button type="submit" class="btn btn-default">Submit</button>
+                        </div>
+                        </div>
+                    </form>
                   
 
 
