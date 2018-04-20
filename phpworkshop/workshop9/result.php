@@ -22,10 +22,10 @@
                         else{
                             $name= $_POST["txt_name"]+$_POST["txt_lastname"];
                             if($_POST[sex]==male){
-                                $name="นาย"+$name;
+                                $name="นาย".$name;
                             }
                             else{
-                                $name="นาง"+$name;
+                                $name="นาง".$name;
                             }
                             $number=$_POST["txt_number"]
                             echo "$name";
