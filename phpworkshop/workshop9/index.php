@@ -28,19 +28,19 @@
                                                         echo "<div class=\"row\">";
                                                         echo "<div class=\"alert alert-danger col-sm-offset-2 col-sm-5\">";
                                                         echo "Username และ/หรือ Password ไม่ถูกต้อง</div></div>";
-                                                        ?>    <?php include "login.html";?> <?php
+                                                        
                                                 }
                                                 else {
                                                         
                                                 }
                                                 else{
-                                                    ?>    <?php include "login.html";?> <?php
+                                                  
                                                 }
 
                                         }
                                 ?>
                                 </div>
-                
+                          <?php include "login.html";?> 
 
 
                     <!-- เครดิด!-->
