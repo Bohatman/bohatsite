@@ -35,7 +35,9 @@
                             echo "กิจกรรมที่ชอบคือ";
                             $c= count($_POST["event"]);
                             for($i=0;$i<$c;$i++){
-                                echo $_POST["event"][$i];
+                                if($i==$c-1){
+                                echo $_POST["event"][$i];}
+                                echo $_POST["event"][$i].",";
                             }
 
                         }
