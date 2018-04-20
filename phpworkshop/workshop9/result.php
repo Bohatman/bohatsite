@@ -21,15 +21,17 @@
                         }
                         else{
                             $name= $_POST["txt_name"]+$_POST["txt_lastname"];
+                            $sex=$_POST["sex"];
+                            /*
                             if($_POST["sex"]=="male"){
                                 $name="นาย".$name;
                             }
                             else{
                                 $name="นาง".$name;
                             }
+                            */
                             $number=$_POST["txt_number"]
                             echo "$name";
-
                         }
                     ?>
 
