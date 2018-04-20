@@ -17,7 +17,8 @@
                                         if(!empty($_POST["txt_username"])&&!empty($_POST["txt_password"])){
                                                 $username = $_POST["txt_username"];
                                                 if($username== "admin"&& $_POST["txt_password"] == "enet"){
-                                                        echo "Hi";
+                                                        echo "<div class=\"alert alert-danger\">";
+                                                        echo "Username และ/หรือ Password ไม่ถูกต้อง</div>";
                                                 }
 
                                         }
