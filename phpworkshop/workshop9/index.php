@@ -30,9 +30,9 @@
                                                 }
                                                 else {
                                                         ?>
-                                                <script type="text/javascript">
-                                                document.getElementById('main').innerHTML = "New text!";
-                                                </script>
+                                                        <script>
+                                                        $('#main').hide();
+                                                        </script>
                                                 <?php     
                                                 }
 
