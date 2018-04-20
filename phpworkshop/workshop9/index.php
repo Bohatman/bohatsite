@@ -9,6 +9,13 @@
                 <title>น้องก้อนมาแล้ว</title>  
             </head>
             <body>
+
+            <script>
+                function correct() {
+                        document.getEleentById("1L").innerHTML = "1";
+                }
+                </script>
+
                     <!-- เมนู!-->
                     <?php include "nav.html";?>
                     <!-- เมนู!-->
@@ -22,7 +29,7 @@
                                                         echo "Username และ/หรือ Password ไม่ถูกต้อง</div></div>";
                                                 }
                                                 else {
-                                                        echo "<script> document.getElementById(\"1L\").innerHTML = \"ว่าไง\"</script>";
+                                                        echo '<script type="text/javascript">','correct();','</script>';     
                                                 }
 
                                         }
