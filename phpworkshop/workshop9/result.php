@@ -31,9 +31,9 @@
                            $number=$_POST["txt_number"];
                             $name = $name." ".$_POST["txt_lastname"];
                             echo "$name"."<br>";
-                            echo "เบอร์มือถือ"."$_POST[\"txt_number\"]"."e-Mail:"."$_POST[\"txt_email\"]"."<br>";
+                            echo "เบอร์มือถือ".$_POST["txt_number"]."e-Mail:".$_POST["txt_email"]."<br>";
                             echo "กิจกรรมที่ชอบคือ";
-                            $c=count($_POST["event"]);
+                            $c= count($_POST["event"]);
                             for($i=0;$i<$c;$i++){
                                 echo $_POST["event"][$i];
                             }
