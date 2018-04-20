@@ -29,10 +29,8 @@
                         </div>
                         <div class="form-group">
                             <label for="txt_sex" class="col-sm-2 control-label"> เพศ :</label>
-                            <form>
-                            <label class="radio-inline"><input type="radio" name="sex_male">ชาย</label>
-                            <label class="radio-inline"><input type="radio" name="sex_female">หญิง</label>
-                            </form>
+                            <label class="radio-inline"><input type="radio" name="sex" value="male">ชาย</label>
+                            <label class="radio-inline"><input type="radio" name="sex" value="female">หญิง</label>
                         </div>
                         <div class="form-group">
                             <label for="txt_email" class="col-sm-2 control-label"> Email address</label>
