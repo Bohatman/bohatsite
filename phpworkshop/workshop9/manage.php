@@ -50,7 +50,7 @@
                             <label><input type="checkbox">อ่านหนังสือ</label>
                             <label><input type="checkbox">ดูภาพยนตร์</label>
                             <label><input type="checkbox">ฟังเพลง</label>
-                            <br>
+                            
                             <label><input type="checkbox">เล่นกีฬา</label>
                             <label><input type="checkbox">ท่องเที่ยว</label>
                             <label><input type="checkbox">หาความรู้เพิ่มเติม</label>
