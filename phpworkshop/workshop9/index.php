@@ -17,10 +17,11 @@
                                         if(!empty($_POST["txt_username"])&&!empty($_POST["txt_password"])){
                                                 $username = $_POST["txt_username"];
                                                 if($username== "admin"&& $_POST["txt_password"] == "enet"){
-                                                        echo "<div class=\"col-sm-5\">"
+                                                        echo "<div class=\"form-group\">"
+                                                        echo "<div class=\"col-sm-offset-2 col-sm-5\">"
                                                         echo "<div class=\"alert alert-danger\">";
                                                         echo "Username และ/หรือ Password ไม่ถูกต้อง</div>";
-                                                        echo "</div><br>"
+                                                        echo "</div></div>";
                                                 }
 
                                         }
