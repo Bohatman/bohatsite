@@ -20,7 +20,14 @@
                             header('Location: /phpworkshop/workshop9/manage.php');
                         }
                         else{
-                            $name= $_POST["txt_name"];
+                            $name= $_POST["txt_name"]+$_POST["txt_lastname"];
+                            if($_POST[sex]==male){
+                                $name="นาย"+$name;
+                            }
+                            else{
+                                $name="นาง"+$name;
+                            }
+                            $number=$_POST["txt_number"]
                             echo "$name";
 
                         }
