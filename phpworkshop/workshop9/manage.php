@@ -39,7 +39,7 @@
                         </div>
                         </div>
                         <div class="form-group">
-                            <label for="txt_email" class="col-sm-2 control-label">e-Mail</label>
+                            <label for="txt_email" class="col-sm-2 control-label">e-Mail:</label>
                         <div class="col-sm-5">
                             <input type="email" class="form-control" id="txt_email" placeholder="e-Mail">
                         </div>
@@ -47,14 +47,16 @@
                         <div class="form-group">
                         <label for="txt_event" class="col-sm-2 control-label">กิจกรรม:</label>
                             <div class="checkbox">
+                                <div class="row col-sm-offset-2">
                             <label><input type="checkbox">อ่านหนังสือ</label>
                             <label><input type="checkbox">ดูภาพยนตร์</label>
                             <label><input type="checkbox">ฟังเพลง</label>
-                            
+                                </div>
+                            <div class ="row col-sm-offset-2">
                             <label><input type="checkbox">เล่นกีฬา</label>
                             <label><input type="checkbox">ท่องเที่ยว</label>
                             <label><input type="checkbox">หาความรู้เพิ่มเติม</label>
-                    
+                                </div>
                         </div>
                         </div>
                         <div class="form-group">
