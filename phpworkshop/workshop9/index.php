@@ -22,7 +22,7 @@
                                                         echo "Username และ/หรือ Password ไม่ถูกต้อง</div></div>";
                                                 }
                                                 else {
-                                                        echo "<script> document.getElementById(\"1L\").innerHTML = \"ว่าไง\"";
+                                                        echo "<script> document.getElementById(\"1L\").innerHTML = \"ว่าไง\"</script>";
                                                 }
 
                                         }
