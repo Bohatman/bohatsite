@@ -40,7 +40,9 @@
                                         }
                                 ?>
                         </div>
-                        <form class= "form-horizontal" action="" method="post" id="main">
+
+                        <div id = main>
+                        <form class= "form-horizontal" action="" method="post">
                                 <div class="form-group">
                                         <label for="txt_username" class="col-sm-2 control-label"> Username:</label>
                                 <div class="col-sm-5">
@@ -59,7 +61,7 @@
                         </div>
                         </div>
                         </form>
-
+                                </div>
 
                     <!-- เครดิด!-->
                     <?php include "footer.php";?>
