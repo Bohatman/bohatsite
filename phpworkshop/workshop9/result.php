@@ -15,13 +15,11 @@
                     <!-- เมนู!-->
                     <?php 
                         if(empty($_POST["txt_name"])){
-                            $message ="กรุณากลับไปใส่ข้อมูลให้ครับก่อน";
-                            echo "<script type='text/javascript'>alert('$message');</script>";
                             header('Location: /phpworkshop/workshop9/manage.php');
                         }
                         else{
                             $name= $_POST["txt_name"];
-                            $sex=$_POST["sex"];
+                            $sex= $_POST["sex"];
                             /*
                             if($_POST["sex"]=="male"){
                                 $name="นาย".$name;
@@ -31,7 +29,8 @@
                             }
                             */
                             $number=$_POST["txt_number"]
-                            echo "$name"."$sex";
+                            echo "$name";
+                            echo "$sex";
                         }
                     ?>
 
