@@ -10,12 +10,6 @@
             </head>
             <body>
 
-            <script>
-                function correct() {
-                        
-                }
-                </script>
-
                     <!-- เมนู!-->
                     <?php include "nav.html";?>
                     <!-- เมนู!-->
