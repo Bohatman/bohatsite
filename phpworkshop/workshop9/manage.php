@@ -28,6 +28,13 @@
                         </div>
                         </div>
                         <div class="form-group">
+                            <label for="txt_sex" class="col-sm-2 control-label"> เพศ :</label>
+                        <div class="col-sm-5">
+                            <input type="radio" class="form-control" id="radio_sex" value="male">ชาย
+                            <input type="radio" class="form-control" id="radio_sex" value="female">หญิง
+                        </div>
+                        </div>
+                        <div class="form-group">
                             <label for="txt_email" class="col-sm-2 control-label"> Email address</label>
                         <div class="col-sm-5">
                             <input type="email" class="form-control" id="txt_email" placeholder="Email">
