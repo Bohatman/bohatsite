@@ -31,7 +31,7 @@
                                                 else {
                                                         ?>
                                                         <script>
-                                                        $("#mainJa").html="ควย";
+                                                        $("#mainJa").html("ควย");
                                                         </script>
                                                 <?php     
                                                 }
