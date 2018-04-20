@@ -10,5 +10,7 @@
             </head>
             <body>
                     <?php include "nav.html";?>
+
+                    <?php include "footer.php";?>
             </body>
     </html>
