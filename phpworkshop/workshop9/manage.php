@@ -55,7 +55,7 @@
                             <div class ="row col-sm-offset-2">
                             <label><input type="checkbox" name="event[]" value="เล่นกีฬา">เล่นกีฬา</label>
                             <label><input type="checkbox" name="event[]" value="ท่องเที่ยว">ท่องเที่ยว</label>
-                            <label><input type="checkbox" name="event[]" valie="หาความรู้เพิ่มเติม">หาความรู้เพิ่มเติม</label>
+                            <label><input type="checkbox" name="event[]" value="หาความรู้เพิ่มเติม">หาความรู้เพิ่มเติม</label>
                                 </div>
                         </div>
                         </div>
