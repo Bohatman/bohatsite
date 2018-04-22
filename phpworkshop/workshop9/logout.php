@@ -1,5 +1,9 @@
 <?php 
 if(!empty($_POST("logoutbutton"))){
 session_destroy();
-header("Location: index.php");}
+?>
+<script>
+    window.location.replace('manage.php');
+</script>
+<?php
 ?>

@@ -1,4 +1,3 @@
-</script>
 <center>ออกจากระบบ
     <br>
     <form action="logout.php" method="post">
