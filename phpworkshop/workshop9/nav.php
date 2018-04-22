@@ -36,7 +36,7 @@
                             </div>
                             <div class="collapse navbar-collapse" id="collapse">
                             <ul class="nav navbar-nav">
-                            <li id="li1" onclick="gourl();"><a href="manage.php" disabled>จัดการข้อมูล</a></li>
+                            <li id="li1" onclick="gourl();"><a >จัดการข้อมูล</a></li>
                             <li><a href="#">ช่วยเหลือ</a></li>
                             </ul>
                             </div>
