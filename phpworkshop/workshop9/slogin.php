@@ -1,9 +1,9 @@
 <script>
     function logout(){
-        <?php 
-            session_destroy();
+            <?php 
+            session_unset();
+            header("Location: index.php");
             ?>
-            window.location.replace('index.php');
     }
 </script>
 <center>ออกจากระบบ
