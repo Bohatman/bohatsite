@@ -2,5 +2,5 @@
 session_destroy();
 ?>
 <script>
-    window.location.replace('manage.php');
+    window.location.replace('index.php');
 </script>
