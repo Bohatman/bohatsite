@@ -11,7 +11,7 @@
             <body>
                     <?php 
                     if(!(empty($_POST["logoutbutton"]))){
-                        session_destroy();
+                        unset($_SESSION["username"]);
                     }
                     ?>
 
