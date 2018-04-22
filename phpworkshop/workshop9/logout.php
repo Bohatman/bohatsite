@@ -1,5 +1,5 @@
 <?php 
-    $_SESSION["username"]="error";
+    session_start();
     session_destroy();
     header("Location: index.php");
 ?>
