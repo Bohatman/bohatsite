@@ -16,12 +16,14 @@
                         }
                         ?>
         }
-        var url =window.location.pathname;
+        </script>
+        </head>
+        <script>
+                        var url =window.location.pathname;
         if(url.search("manage") >= 0){
                 $("#li1").attr("class", "active");
         }
         </script>
-        </head>
 <!-- เมนู !-->
                     <nav class="navbar navbar-default">
                             <div class="container">
