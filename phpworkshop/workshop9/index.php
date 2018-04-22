@@ -11,7 +11,7 @@
             <body>
                     <?php 
                     if(!(empty($_POST["logoutbutton"]))){
-                        unset($_SESSION["username"]);
+                        session_destroy();
                     }
                     ?>
 
@@ -33,7 +33,7 @@
                                                         include "login.html"; 
                                                 }
                                                 else {
-                                                        $_SESSION["username"] = "admin2";   
+                                                        $_SESSION["username"] = "admin";   
                                                         include "slogin.php";      
                                                 }
 
