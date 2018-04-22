@@ -1,6 +1,9 @@
 <head>
 <script>
-        alert(window.location.pathname);
+        var url =window.location.pathname;
+        if(url.search("manage") >= 0){
+                $("#li1").attr("class", "active");
+        }
         function gourl(){
                 <?php 
                         if($_SESSION["username"]=="admin"){
