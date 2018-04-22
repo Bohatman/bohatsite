@@ -2,6 +2,7 @@
 <script>
         var url =window.location.pathname;
         if(url.search("manage") >= 0){
+                alert("yeah");
                 $("#li1").attr("class", "active");
         }
         function gourl(){
@@ -16,7 +17,6 @@
                         else {
                                 ?>
                                alert("กรุณาเข้าสู่ระบบ");
-                                $("#li1").attr("class", "");
                                 <?php
                         }
                         ?>
