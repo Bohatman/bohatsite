@@ -17,9 +17,6 @@
                         ?>
         }
         </script>
-                        <script>
-                    $("#li1").attr("class", "active");
-                </script> 
         </header>
 <!-- เมนู !-->
                     <nav class="navbar navbar-default">
