@@ -7,6 +7,7 @@
                               //header("Location: manage.php");
                               ?> 
                               window.location.replace('manage.php');
+                              $("#li1").attr("class", "active");
                               <?php 
                         }
                         else {
@@ -33,7 +34,7 @@
                             </div>
                             <div class="collapse navbar-collapse" id="collapse">
                             <ul class="nav navbar-nav">
-                            <li><a onclick="gourl();">จัดการข้อมูล</a></li>
+                            <li id="li1"><a onclick="gourl();">จัดการข้อมูล</a></li>
                             <li><a href="#">ช่วยเหลือ</a></li>
                             </ul>
                             </div>
