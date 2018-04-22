@@ -1,9 +1,5 @@
 <head>
 <script>
-        var url =window.location.pathname;
-        if(url.search("manage") >= 0){
-                $("#li1").attr("class", "active");
-        }
         function gourl(){
                 <?php 
                         if($_SESSION["username"]=="admin"){
@@ -20,8 +16,12 @@
                         }
                         ?>
         }
+        var url =window.location.pathname;
+        if(url.search("manage") >= 0){
+                $("#li1").attr("class", "active");
+        }
         </script>
-        </header>
+        </head>
 <!-- เมนู !-->
                     <nav class="navbar navbar-default">
                             <div class="container">
