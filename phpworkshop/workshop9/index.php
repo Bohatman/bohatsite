@@ -27,7 +27,8 @@
                                                         include "login.html"; 
                                                 }
                                                 else {
-                                                        $_SESSION["username"] = "admin";   
+                                                        $_SESSION["username"] = "admin";
+                                                        header("Refresh:0");   
                                                         include "slogin.php";      
                                                 }
 
