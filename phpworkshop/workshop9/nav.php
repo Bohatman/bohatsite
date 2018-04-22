@@ -3,11 +3,14 @@
         function gourl(){
                 <?php 
                         if($_SESSION["username"]=="admin"){
-                              header("Location: manage.php");
+                              //header("Location: manage.php");
+                              <?php 
+                              window.location.replace('manage.php');
+                              ?>
                         }
                         else {
                                 ?>
-                                alert("Error");
+                                alert("กรุณาเข้าสู่ระบบ");
                                 <?php
                         }
                         ?>
