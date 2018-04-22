@@ -2,8 +2,12 @@
 <script>
         function gourl(){
                 <?php 
-                        if($_SESSION["username"]=="admin"){
-                                header("Google.com");
+                        $username = $_SESSION["username"];
+                        if($username=="admin"){
+                                ?>
+                                alert("Error");
+                                <?php
+                              header("Google.com");
                         }
                         else {
                                 ?>
