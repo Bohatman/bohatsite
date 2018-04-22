@@ -27,12 +27,8 @@
                                                 else {
                                                         session_start();
                                                         $_SESSION["username"] = "admin";   
-                                                        ?> 
-                                                        <script>
-                                                        var username =<?php $_SESSION["username"]?>; 
-                                                        alert(username);</script>
-                                                        <?php
-                                                        include "slogin.php";      
+                                                        echo $_SESSION["username"];
+                                                        //include "slogin.php";      
                                                 }
 
                                         }
