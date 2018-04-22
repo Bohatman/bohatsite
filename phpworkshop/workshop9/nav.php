@@ -2,8 +2,7 @@
 <script>
         function gourl(){
                 <?php 
-                        $username = $_SESSION["username"];
-                        if($username=="admin"){
+                        if($_SESSION["username"]=="admin"){
                               header("Location: manage.php");
                         }
                         else {
