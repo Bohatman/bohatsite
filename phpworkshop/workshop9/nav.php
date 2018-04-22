@@ -1,11 +1,19 @@
 <head>
 <script>
+        session_start();
+        <?php 
+                if( $_SESSION['clicked']==1){
+                        ?>
+                        $("#li1").attr("class", "active");<?php
+                        $_SESSION['clicked'] = 0;
+                }
+        ?>
         function gourl(){
                 <?php 
-                session_start();
                         if($_SESSION["username"]=="admin"){
                               //header("Location: manage.php");
                               ?> 
+                              $_SESSION['clicked'] = 1;
                               $("#li1").attr("class", "active");
                             window.location.replace('manage.php');
                               <?php 
