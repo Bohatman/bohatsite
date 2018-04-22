@@ -16,11 +16,6 @@
                     <!-- เมนู!-->
 
                         <div>
-                        <?php 
-                    if(!(empty($_POST["logoutbutton"]))){
-                        session_destroy();
-                    }
-                    ?>
                                 <?php   
                                 if(!($_SESSION["username"]=="admin")){
                                         if(!empty($_POST["txt_username"])&&!empty($_POST["txt_password"])){
