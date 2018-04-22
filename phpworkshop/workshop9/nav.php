@@ -19,7 +19,6 @@
         </script>
         </header>
         <?php 
-        echo $_SERVER['PHP_SELF'];
         if(true){
 
                 ?>
