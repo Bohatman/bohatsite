@@ -1,6 +1,10 @@
 <center>ออกจากระบบ
     <br>
-    <form action="index.php" method="post">
-    <button type="submit" class="btn btn-default" onlick="logout();" value="clicked" name="logoutbutton">Logout</button>
-</form>
+    <script>
+        function logout(){
+            window.location.replace('logout.php');
+        }
+    </script>
+    <button type="submit" class="btn btn-default" onlick="logout();">Logout</button>
+
 </center>
