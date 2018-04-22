@@ -4,10 +4,7 @@
                 <?php 
                         $username = $_SESSION["username"];
                         if($username=="admin"){
-                                ?>
-                                alert("Error2");
-                                <?php
-                              header("Google.com");
+                              header("Location: manage.php");
                         }
                         else {
                                 ?>
