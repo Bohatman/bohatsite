@@ -9,6 +9,11 @@
                 <title>น้องก้อนมาแล้ว</title>  
             </head>
             <body>
+                    <?php 
+                    if(!(empty($_POST["logoutbutton"]))){
+                        session_destroy();
+                    }
+                    ?>
 
                     <!-- เมนู!-->
                     <?php
