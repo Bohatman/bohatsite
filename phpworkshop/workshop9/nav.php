@@ -1,6 +1,6 @@
 <head>
 <script>
-        alert(<?php$_SERVER['PHP_SELF']?>);
+        alert(<?php$_SERVER['PHP_SELF'];?>);
         function gourl(){
                 <?php 
                         if($_SESSION["username"]=="admin"){
