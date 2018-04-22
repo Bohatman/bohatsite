@@ -16,6 +16,18 @@
                         }
                         ?>
         }
+        $(function(){
+    // this will get the full URL at the address bar
+    var url = window.location.href; 
+
+    // passes on every "a" tag 
+    $("#sub-header a").each(function() {
+            // checks if its the same on the address bar
+        if(url == (this.href)) { 
+            $(this).closest("li").addClass("active");
+        }
+    });
+});
         </script>
         </header>
 <!-- เมนู !-->
@@ -33,8 +45,8 @@
                             </div>
                             <div class="collapse navbar-collapse" id="collapse">
                             <ul class="nav navbar-nav">
-                            <li id="li1" onclick="gourl();"><a href="#" class="not-active">จัดการข้อมูล</a></li>
-                            <li><a href="#"class="not-active"> ่วยเหลือ</a></li>
+                            <li id="li1" onclick="gourl();"><a href="manage.php" disabled>จัดการข้อมูล</a></li>
+                            <li><a href="#">ช่วยเหลือ</a></li>
                             </ul>
                             </div>
                             </div>
