@@ -5,7 +5,7 @@
                         $username = $_SESSION["username"];
                         if($username=="admin"){
                                 ?>
-                                alert("Error");
+                                alert("Error2");
                                 <?php
                               header("Google.com");
                         }
