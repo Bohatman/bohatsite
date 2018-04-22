@@ -1,11 +1,8 @@
-<?php 
-session_start();
-?>
+
 <script>
         function gourl(){
                 <?php 
                         if($_SESSION["username"]=="admin"){
-                                unset($_SESSION["username"]);
                                 header("Google.com");
                         }
                         else {
