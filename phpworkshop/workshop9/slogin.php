@@ -5,6 +5,6 @@
             window.location.replace('logout.php');
         }
     </script>
-    <button type="submit" class="btn btn-default" onlick="logout();">Logout</button>
+    <button type="submit" class="btn btn-default" onclick="logout();">Logout</button>
 
 </center>
