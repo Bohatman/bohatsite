@@ -20,6 +20,14 @@
         </script>
         </header>
 <!-- เมนู !-->
+<?php 
+        $url = $_SERVER['PHP_SELF'];
+        $a = 'How are you?';
+
+if (strpos($a, 'are') !== false) {
+    echo 'true';
+}
+?>
                     <nav class="navbar navbar-default">
                             <div class="container">
                             <div class="navbar-header">
