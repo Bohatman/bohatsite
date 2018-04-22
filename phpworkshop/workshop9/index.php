@@ -25,9 +25,9 @@
                                                         include "login.html"; 
                                                 }
                                                 else {
-                                                        include "slogin.php"; 
                                                         session_start();
-                                                        $_SESSION["username"] = "manege.php";        
+                                                        $_SESSION["username"] = "manege.php";   
+                                                        include "slogin.php";      
                                                 }
 
                                         }
