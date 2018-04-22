@@ -2,7 +2,7 @@
 <script>
         
         <?php session_start();
-                if( $_SESSION['clicked']==1){
+                if(isset($_SESSION['clicked'])){
                         ?>
                         $("#li1").attr("class", "active");<?php
                 }
