@@ -19,8 +19,9 @@
         </script>
         </head>
         <script>
-                        var url =window.location.pathname;
+        var url =window.location.pathname;
         if(url.search("manage") >= 0){
+                alert("Hi");
                 $("#li1").attr("class", "active");
         }
         </script>
