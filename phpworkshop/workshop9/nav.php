@@ -12,8 +12,8 @@
                 <?php 
                         if($_SESSION["username"]=="admin"){
                               //header("Location: manage.php");
+                              $_SESSION["clicked"] = 1;
                               ?> 
-                              $_SESSION['clicked'] = 1;
                               $("#li1").attr("class", "active");
                             window.location.replace('manage.php');
                               <?php 
