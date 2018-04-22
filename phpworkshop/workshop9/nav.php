@@ -6,7 +6,6 @@
                         if($_SESSION["username"]=="admin"){
                               //header("Location: manage.php");
                               ?> 
-                               $("#li1").attr("class", "active");
                              window.location.replace('manage.php');
                               <?php 
                         }
@@ -19,6 +18,16 @@
         }
         </script>
         </header>
+        <?php 
+        if($_SERVER['PHP_SELF']=="manage.php"){
+
+                ?>
+<script>
+                $("#li1").attr("class", "class-name-you-want-to-assign");
+                </script>
+<?php
+        }
+        ?>
 <!-- เมนู !-->
                     <nav class="navbar navbar-default">
                             <div class="container">
