@@ -1,7 +1,7 @@
 <script>
         function gourl(){
                 <?php 
-                        if(isset($_SESSION['Username']){
+                        if(isset($_SESSION['Username'])){
                                 unset($_SESSION['Username']);
                                 header("Google.com");
                         }
