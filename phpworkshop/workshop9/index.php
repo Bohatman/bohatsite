@@ -33,7 +33,7 @@
                                                         include "login.html"; 
                                                 }
                                                 else {
-                                                        $_SESSION["username"] = "admin";   
+                                                        $_SESSION["username"] = "admin2";   
                                                         include "slogin.php";      
                                                 }
 
