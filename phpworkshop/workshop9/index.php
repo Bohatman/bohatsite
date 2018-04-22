@@ -37,7 +37,7 @@
                                         }
                                 }
                                 else {
-                                        include "slogin.php";
+                                        include "slogin.php";           
 
                                 }
                                 ?>
