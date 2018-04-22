@@ -6,7 +6,7 @@
                         if($_SESSION["username"]=="admin"){
                               //header("Location: manage.php");
                               ?> 
-                              window.location.replace('manage.php');
+                             // window.location.replace('manage.php');
                               $("#li1").attr("class", "active");
                               <?php 
                         }
