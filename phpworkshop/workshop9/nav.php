@@ -1,7 +1,7 @@
 <head>
 <script>
-        session_start();
-        <?php 
+        
+        <?php session_start();
                 if( $_SESSION['clicked']==1){
                         ?>
                         $("#li1").attr("class", "active");<?php
