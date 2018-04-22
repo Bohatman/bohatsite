@@ -11,7 +11,6 @@
                         }
                         else {
                                 ?>
-                                $("#li1").attr("class", "active");
                                 alert("กรุณาเข้าสู่ระบบ");
                                 <?php
                         }
@@ -22,8 +21,10 @@
 <!-- เมนู !-->
 <?php 
         $url = $_SERVER['PHP_SELF'];
-if (strpos($url, 'nav') !== false) {
-    echo 'true';
+if (strpos($url, 'manage') !== false) {
+   ?>
+   <script> $("#li1").attr("class", "active");</script>
+   <?php
 }
 ?>
                     <nav class="navbar navbar-default">
