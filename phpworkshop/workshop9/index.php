@@ -29,7 +29,8 @@
                                                         $_SESSION["username"] = "admin";   
                                                         ?> 
                                                         <script>
-                                                        alert(<?php $_SESSION["username"]?>);</script>
+                                                        var username =<?php $_SESSION["username"]?>; 
+                                                        alert(username);</script>
                                                         <?php
                                                         include "slogin.php";      
                                                 }
