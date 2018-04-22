@@ -24,7 +24,7 @@
 
                 ?>
 <script>
-                $("#li1").attr("class", "class-name-you-want-to-assign");
+                $("#li1").attr("class", "active");
                 </script>
 <?php
         }
