@@ -19,14 +19,6 @@
         </script>
         </header>
 <!-- เมนู !-->
-<?php 
-        $url = $_SERVER['PHP_SELF'];
-if (strpos($url, 'manage') !== false) {
-   ?>
-   <script> $("#li1").attr("class", "active");</script>
-   <?php
-}
-?>
                     <nav class="navbar navbar-default">
                             <div class="container">
                             <div class="navbar-header">
@@ -41,7 +33,7 @@ if (strpos($url, 'manage') !== false) {
                             </div>
                             <div class="collapse navbar-collapse" id="collapse">
                             <ul class="nav navbar-nav">
-                            <li id="li1"><a onclick="gourl();">จัดการข้อมูล</a></li>
+                            <li id="li1" onclick="gourl();"><a href="#">จัดการข้อมูล</a></li>
                             <li><a href="#">ช่วยเหลือ</a></li>
                             </ul>
                             </div>
