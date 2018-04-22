@@ -11,7 +11,9 @@
             <body>
 
                     <!-- เมนู!-->
-                    <?php include "nav.php";?>
+                    <?php
+                    session_start(); 
+                    include "nav.php";?>
                     <!-- เมนู!-->
 
                         <div>
@@ -28,7 +30,6 @@
                                                         include "login.html"; 
                                                 }
                                                 else {
-                                                        session_start();
                                                         $_SESSION["username"] = "admin";   
                                                         include "slogin.php";      
                                                 }
