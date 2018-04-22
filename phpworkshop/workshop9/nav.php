@@ -4,9 +4,9 @@
                 <?php 
                         if($_SESSION["username"]=="admin"){
                               //header("Location: manage.php");
-                              <?php 
+                              ?> 
                               window.location.replace('manage.php');
-                              ?>
+                              <?php 
                         }
                         else {
                                 ?>
