@@ -33,8 +33,8 @@
                             </div>
                             <div class="collapse navbar-collapse" id="collapse">
                             <ul class="nav navbar-nav">
-                            <li id="li1" onclick="gourl();"><a href="#">จัดการข้อมูล</a></li>
-                            <li><a href="#">ช่วยเหลือ</a></li>
+                            <li id="li1" onclick="gourl();"><a href="#" class="not-active">จัดการข้อมูล</a></li>
+                            <li><a href="#"class="not-active"> ่วยเหลือ</a></li>
                             </ul>
                             </div>
                             </div>
