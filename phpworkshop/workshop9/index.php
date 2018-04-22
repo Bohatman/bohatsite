@@ -28,7 +28,7 @@
                                                         session_start();
                                                         $_SESSION["username"] = "admin";   
                                                         echo $_SESSION["username"];
-                                                        //include "slogin.php";      
+                                                        include "slogin.php";      
                                                 }
 
                                         }
