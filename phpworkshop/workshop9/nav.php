@@ -22,9 +22,7 @@
 <!-- เมนู !-->
 <?php 
         $url = $_SERVER['PHP_SELF'];
-        $a = 'How are you?';
-
-if (strpos($a, 'are') !== false) {
+if (strpos($a, 'nav') !== false) {
     echo 'true';
 }
 ?>
