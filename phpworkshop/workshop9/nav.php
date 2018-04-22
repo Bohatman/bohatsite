@@ -1,4 +1,19 @@
-                    <!-- เมนู !-->
+<script>
+        function gourl(){
+                <?php 
+                        if(isset($_SESSION['Username']){
+                                unset($_SESSION['Username']);
+                                header("Google.com");
+                        }
+                        else {
+                                ?>
+                                alert("Error");
+                                <?php
+                        }
+                        ?>
+        }
+</script>
+<!-- เมนู !-->
                     <nav class="navbar navbar-default">
                             <div class="container">
                             <div class="navbar-header">
@@ -13,7 +28,7 @@
                             </div>
                             <div class="collapse navbar-collapse" id="collapse">
                             <ul class="nav navbar-nav">
-                            <li><a href="#">จัดการข้อมูล</a></li>
+                            <li><a onclick="gourl();">จัดการข้อมูล</a></li>
                             <li><a href="#">ช่วยเหลือ</a></li>
                             </ul>
                             </div>
