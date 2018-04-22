@@ -28,7 +28,8 @@
                                                         session_start();
                                                         $_SESSION["username"] = "admin";   
                                                         ?> 
-                                                        alert(<?php $_SESSION["username"]?>);
+                                                        <script>
+                                                        alert(<?php $_SESSION["username"]?>);</script>
                                                         <?php
                                                         include "slogin.php";      
                                                 }
