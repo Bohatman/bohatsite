@@ -1,4 +1,6 @@
 <?php 
+$_SESSION["username"]=null;
+session_unset();
 session_destroy();
 ?>
 <script>
