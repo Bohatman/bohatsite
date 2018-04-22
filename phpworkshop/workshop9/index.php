@@ -18,8 +18,6 @@
 
                         <div>
                                 <?php   
-                                echo $_SESSION["username"]==null;
-                                echo $_SESSION["username"];
                                 if(!isset($_SESSION["username"])){
                                         if(!empty($_POST["txt_username"])&&!empty($_POST["txt_password"])){
                                                 $username = $_POST["txt_username"];
