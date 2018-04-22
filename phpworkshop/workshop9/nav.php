@@ -20,7 +20,7 @@
         </header>
         <?php 
         echo $_SERVER['PHP_SELF'];
-        if($_SERVER['PHP_SELF']=="/manage.php"|| $_SERVER['PHP_SELF']=="/phpworkshop/workshop9/manage.php"){
+        if(true){
 
                 ?>
 <script>
