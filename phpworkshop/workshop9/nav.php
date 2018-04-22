@@ -19,6 +19,7 @@
         </script>
         </header>
         <?php 
+        echo $_SERVER['PHP_SELF'];
         if($_SERVER['PHP_SELF']=="manage.php"){
 
                 ?>
