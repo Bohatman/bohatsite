@@ -4,8 +4,8 @@ session_start();
 <script>
         function gourl(){
                 <?php 
-                        if(isset($_SESSION['Username'])){
-                                unset($_SESSION['Username']);
+                        if(isset($_SESSION["username"])){
+                                unset($_SESSION["username"]);
                                 header("Google.com");
                         }
                         else {

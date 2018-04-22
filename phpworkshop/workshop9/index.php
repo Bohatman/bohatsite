@@ -26,7 +26,7 @@
                                                 }
                                                 else {
                                                         session_start();
-                                                        $_SESSION["username"] = "manege.php";   
+                                                        $_SESSION["username"] = "admin";   
                                                         include "slogin.php";      
                                                 }
 
