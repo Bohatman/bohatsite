@@ -11,6 +11,7 @@
                         }
                         else {
                                 ?>
+                                $("#li1").attr("class", "active");
                                 alert("กรุณาเข้าสู่ระบบ");
                                 <?php
                         }
@@ -18,16 +19,6 @@
         }
         </script>
         </header>
-        <?php 
-        if(true){
-
-                ?>
-<script>
-                $("#li1").attr("class", "active");
-                </script>
-<?php
-        }
-        ?>
 <!-- เมนู !-->
                     <nav class="navbar navbar-default">
                             <div class="container">
