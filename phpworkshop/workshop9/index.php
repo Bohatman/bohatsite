@@ -16,6 +16,7 @@
 
                         <div>
                                 <?php   
+                                if(!isset($_SESSION["username"])){
                                         if(!empty($_POST["txt_username"])&&!empty($_POST["txt_password"])){
                                                 $username = $_POST["txt_username"];
                                                 if(!($username== "admin"&& $_POST["txt_password"] == "enet")){
@@ -34,6 +35,11 @@
                                         else{
                                                 include "login.html"; 
                                         }
+                                }
+                                else {
+                                        include "slogin.php";
+
+                                }
                                 ?>
                                 </div>
                           
