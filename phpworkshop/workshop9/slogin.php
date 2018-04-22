@@ -3,6 +3,7 @@
         <?php 
             session_destroy();
             ?>
+            window.location.replace('index.php');
     }
 </script>
 <center>ออกจากระบบ
