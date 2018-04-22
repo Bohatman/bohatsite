@@ -27,6 +27,9 @@
                                                 else {
                                                         session_start();
                                                         $_SESSION["username"] = "admin";   
+                                                        ?> 
+                                                        alert(<?php $_SESSION["username"]?>);
+                                                        <?php
                                                         include "slogin.php";      
                                                 }
 
