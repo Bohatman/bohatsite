@@ -22,6 +22,7 @@
         var url =window.location.pathname;
         if(url.search("manage") >= 0){
                 alert("Hi");
+                header("Refresh:0"); 
                 document.getElementById("li1").className = "active";
         }
         </script>
