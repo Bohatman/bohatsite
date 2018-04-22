@@ -22,7 +22,7 @@
 <!-- เมนู !-->
 <?php 
         $url = $_SERVER['PHP_SELF'];
-if (strpos($a, 'nav') !== false) {
+if (strpos($url, 'nav') !== false) {
     echo 'true';
 }
 ?>
