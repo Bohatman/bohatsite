@@ -12,7 +12,7 @@
                         }
                         ?>
         }
-</script>
+        </script>
 <!-- เมนู !-->
                     <nav class="navbar navbar-default">
                             <div class="container">
