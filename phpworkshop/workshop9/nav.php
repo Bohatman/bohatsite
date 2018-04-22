@@ -1,4 +1,4 @@
-
+<head>
 <script>
         function gourl(){
                 <?php 
@@ -13,6 +13,7 @@
                         ?>
         }
         </script>
+        </header>
 <!-- เมนู !-->
                     <nav class="navbar navbar-default">
                             <div class="container">
