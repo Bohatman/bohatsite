@@ -2,7 +2,6 @@
 <script>
         var url =window.location.pathname;
         if(url.search("manage") >= 0){
-                alert("yeah");
                 $("#li1").attr("class", "active");
         }
         function gourl(){
