@@ -12,7 +12,7 @@
                     <!-- เมนู!-->
                     <?php
                     session_start(); 
-                    include "nav.php";
+                    include "header.php";
                     $_SESSION["username"]=null;
                     ?>
                     <!-- เมนู!-->

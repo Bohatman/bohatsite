@@ -11,7 +11,7 @@
             <body>
                 
                     <!-- เมนู!-->
-                    <?php include "nav.php";?>
+                    <?php include "header.php";?>
                     <!-- เมนู!-->
                     <?php 
                         if(empty($_POST["txt_name"])){
