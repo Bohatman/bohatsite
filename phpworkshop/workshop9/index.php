@@ -13,7 +13,6 @@
                     <?php
                     session_start(); 
                     include "header.php";
-                    $_SESSION["username"]=null;
                     ?>
                     <!-- เมนู!-->
 
