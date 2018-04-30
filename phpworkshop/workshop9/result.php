@@ -15,7 +15,7 @@
                     <!-- เมนู!-->
                     <?php 
                         if(empty($_POST["txt_name"])){
-                            header('Location: manage.php');
+                            header('Location: /phpworkshop/workshop9/manage.php');
                         }
                         else{
                             $name= $_POST["txt_name"];
