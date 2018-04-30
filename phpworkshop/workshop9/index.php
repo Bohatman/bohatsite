@@ -13,14 +13,12 @@
                     <?php
                     session_start(); 
                     include "header.php";
-                    if(!empty($_POST["txt_username"])||!empty($_POST["txt_password"])){
-                    $_SESSION["username"];}
                     ?>
                     <!-- เมนู!-->
 
                         <div>
                                 <?php   
-                                if(!($_SESSION["username"]=="admin")){
+                                if(!(isset($_SESSION["username"]))){
                                         if(!empty($_POST["txt_username"])||!empty($_POST["txt_password"])){
                                                 $username = $_POST["txt_username"];
                                                 if(!($username== "admin"&& $_POST["txt_password"] == "enet")){
