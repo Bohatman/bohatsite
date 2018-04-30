@@ -13,7 +13,8 @@
                     <?php
                     session_start(); 
                     include "header.php";
-                    $_SESSION["username"];
+                    if(!empty($_POST["txt_username"])||!empty($_POST["txt_password"])){
+                    $_SESSION["username"];}
                     ?>
                     <!-- เมนู!-->
 
