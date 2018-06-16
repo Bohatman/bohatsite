@@ -2,6 +2,7 @@
 <?php
 $username = $_POST['username'];
 $comment =$_POST['comment'];
+$comment = utf8_encode($comment);
 $date = date("y-m-d");
 $connectstr_dbhost = '';
 $connectstr_dbname = '';
@@ -30,7 +31,7 @@ if (!$link) {
 }
 
 $sql = "INSERT INTO short_post (DATE, DATA) 
-VALUES ('".$date."',\"".$_POST['comment']."\")";
+VALUES ('".$date."',\"".$comment."\")";
 
 if ($link->query($sql) === TRUE) {
     echo "New record created successfully";
