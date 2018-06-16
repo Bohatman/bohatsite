@@ -1,6 +1,6 @@
 <?php
 if(!isset($_POST['username'] && !isset($_POST['comment']))){
-    header("Location: index.html");
+    //header("Location: index.html");
 }
 $username = $_POST['username'];
 $comment =$_POST['comment'];
