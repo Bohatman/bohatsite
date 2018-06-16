@@ -1,4 +1,10 @@
 <?php
+if(!isset($_POST['username'] && !isset($_POST['comment']))){
+    header("Location: index.html");
+}
+$username = $_POST['username'];
+$comment =$_POST['comment'];
+$date = date("Y/m/d");
 $connectstr_dbhost = '';
 $connectstr_dbname = '';
 $connectstr_dbusername = '';
@@ -15,7 +21,7 @@ foreach ($_SERVER as $key => $value) {
     $connectstr_dbpassword = preg_replace("/^.*Password=(.+?)$/", "\\1", $value);
 }
 
-$link = mysqli_connect($connectstr_dbhost, $connectstr_dbusername, $connectstr_dbpassword,$connectstr_dbname);
+$link = mysqli_connect($connectstr_dbhost, $connectstr_dbusername, $connectstr_dbpassword,"bohat_post");
 
 if (!$link) {
     echo "Error: Unable to connect to MySQL." . PHP_EOL;
@@ -23,6 +29,9 @@ if (!$link) {
     echo "Debugging error: " . mysqli_connect_error() . PHP_EOL;
     exit;
 }
+
+$sql = "INSERT INTO short_post (DATE, DATA)
+VALUES (".$date.",".$comment.");";
 
 if ($link->query($sql) === TRUE) {
     echo "New record created successfully";
