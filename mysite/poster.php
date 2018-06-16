@@ -4,7 +4,7 @@ if(!isset($_POST['username'] && !isset($_POST['comment']))){
 }
 $username = $_POST['username'];
 $comment =$_POST['comment'];
-$date = date("Y/m/d");
+//$date = date("Y/m/d");
 $connectstr_dbhost = '';
 $connectstr_dbname = '';
 $connectstr_dbusername = '';
@@ -29,7 +29,7 @@ if (!$link) {
     echo "Debugging error: " . mysqli_connect_error() . PHP_EOL;
     exit;
 }
-
+echo "Connected";
 //$sql = "INSERT INTO short_post (DATE, DATA) VALUES (".$date.",".$comment.")";
 
 if ($link->query($sql) === TRUE) {
