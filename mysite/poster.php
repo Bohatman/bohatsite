@@ -4,7 +4,7 @@
 //}
 $username = $_POST['username'];
 $comment =$_POST['comment'];
-$date = date("Y/m/d");
+$date = date("Y-m-d");
 $connectstr_dbhost = '';
 $connectstr_dbname = '';
 $connectstr_dbusername = '';
