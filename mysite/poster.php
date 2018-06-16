@@ -31,7 +31,7 @@ if (!$link) {
 }
 
 $sql = "INSERT INTO short_post (DATE, DATA)
-VALUES (".$date.",".$comment.");";
+VALUES (".$date.",".$comment.")";
 
 if ($link->query($sql) === TRUE) {
     echo "New record created successfully";
