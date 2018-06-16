@@ -1,3 +1,4 @@
+<meta http-equiv=Content-Type content="text/html; charset=tis-620">
 <?php
 $username = $_POST['username'];
 $comment =$_POST['comment'];
