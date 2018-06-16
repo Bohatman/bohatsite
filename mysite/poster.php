@@ -20,6 +20,7 @@ foreach ($_SERVER as $key => $value) {
 }
 
 $link = mysqli_connect($connectstr_dbhost, $connectstr_dbusername, $connectstr_dbpassword,"bohat_post");
+mysql_query("SET NAMES TIS620");
 
 if (!$link) {
     echo "Error: Unable to connect to MySQL." . PHP_EOL;
