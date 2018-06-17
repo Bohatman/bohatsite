@@ -13,46 +13,47 @@
 	<link rel="stylesheet" href="css/demo.css">
 	<link rel="stylesheet" href="css/footer-distributed-with-address-and-phones.css">
 	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
-  <link href="http://fonts.googleapis.com/css?family=Cookie" rel="stylesheet" type="text/css">
-  <link href="style.css" type="text/css" rel="stylesheet">
-  <script src="loadmore.js"></script>
+	<link href="http://fonts.googleapis.com/css?family=Cookie" rel="stylesheet" type="text/css">
 </head>
 <body>
-<div class="container">
 
-<?php
+<?php 
 
-$rowperpage = 3;
-
-// counting total number of posts
-$allcount_query = "SELECT count(*) as allcount FROM short_post";
-$allcount_result = mysqli_query($link,$allcount_query);
-$allcount_fetch = mysqli_fetch_array($allcount_result);
-$allcount = $allcount_fetch['allcount'];
-
-// select first 3 posts
-$query = "select * from short_post order by POSTID asc limit 0,$rowperpage ";
-$result = mysqli_query($link,$query);
-
-while($row = mysqli_fetch_array($result)){
-
-  $id = $row['POSTID'];
-  $title = $row['	USERNAME'];
-  $content = $row['DATA'];
-  $date = $row['DATE'];
-  echo '<div id="post_'.$id.'" class="post">';
-  echo '<img src=".\pic\img_avatar3.png" alt="John Doe" class="mr-3 mt-3 rounded-circle" style="width:60px;">';
-  echo '<div class="media-body">';
-  echo '<h4>'.$title.'<small><i>Posted on '.$date.'</i></small></h4>';
-  echo '<p>'.$content.'</p>';
-  echo '</div></div>';
+require 'config.php';
+$sql = "SELECT * FROM short_post ORDER BY POSTID desc";
+$result = $link->query($sql);
+getdata($result,3);
+getdata($result,5);
+function getdata($result,$cout){
+if ($result->num_rows > 0) {
+    $row = $result->fetch_assoc();
+    if($row['USERNAME']!=null){
+    ?>
+    <div class="media border p-3">
+  <img src=".\pic\img_avatar3.png" alt="John Doe" class="mr-3 mt-3 rounded-circle" style="width:60px;">
+  <div class="media-body">
+    <h4><?= $row['USERNAME']?> <small><i>Posted on <?= $row['DATE']?></i></small></h4>
+    <p><?= $row['DATA']?></p>
+  </div>
+  
+    </div>
+    <?php
+    /*
+        <div class="float-right">
+        <form action = "del.php" method = "post">
+            <input type="hidden" name = "id" value =<?=$row['POSTID']?>>
+        <button type="submit" class="btn btn-primary mb-2">Submit</button>
+        </form>
+    </div>
+    */
+    if($cout >0 ){getdata($result,$cout-1);}
+        
+}
+} else {
+  
+}
 }
 ?>
 
-<h1 class="load-more">Load More</h1>
-<input type="hidden" id="row" value="0">
-<input type="hidden" id="all" value="<?php echo $allcount; ?>">
-
-</div>
 </body>
 </html>
