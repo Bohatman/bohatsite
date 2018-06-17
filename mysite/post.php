@@ -19,7 +19,7 @@
 
 <?php 
 
-include 'bndb.php';
+require 'bndb.php';
 $sql = "SELECT * FROM short_post ORDER BY POSTID desc";
 $result = $link->query($sql);
 getdata($result,3);

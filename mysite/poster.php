@@ -1,6 +1,6 @@
 <meta charset="utf-8">
 <?php
-include 'bndb.php';
+require 'bndb.php';
 $username = $_POST['username'];
 $comment =$_POST['comment'];
 date_default_timezone_set("Asia/Bangkok");
