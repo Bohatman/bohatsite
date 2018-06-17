@@ -15,9 +15,18 @@
 
     <script>
         function myFunction() {
+            <?php 
+                echo "STILL WORK";
+                callMe();
+                ?>
             document.getElementById("demo").innerHTML = "Hello World";
         }
     </script>
+    <?php 
+        function callMe(){
+            echo "Hello";
+        }
+    ?>
 
 </body>
 
