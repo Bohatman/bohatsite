@@ -22,8 +22,8 @@
 include 'bndb.php';
 $sql = "SELECT * FROM short_post ORDER BY POSTID desc";
 $result = $link->query($sql);
-getdata();
-function getdata(){
+getdata($result);
+function getdata($result){
 if ($result->num_rows > 0) {
   while($row = $result->fetch_assoc()) {
     ?>
