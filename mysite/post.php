@@ -22,10 +22,12 @@
 include 'bndb.php';
 $sql = "SELECT * FROM short_post ORDER BY POSTID desc";
 $result = $link->query($sql);
-getdata($result);
-function getdata($result){
+getdata($result,3);
+function getdata($result,$cout){
 if ($result->num_rows > 0) {
-  while($row = $result->fetch_assoc()) {
+  while($cout>0){
+    $cout--;
+    $row = $result->fetch_assoc() 
     ?>
     <div class="media border p-3">
   <img src=".\pic\img_avatar3.png" alt="John Doe" class="mr-3 mt-3 rounded-circle" style="width:60px;">
