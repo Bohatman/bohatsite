@@ -43,7 +43,9 @@ if ($result->num_rows > 0) {
   
     </div>
     <?php
-  getdata($result,$cout--);
+    if($cout <=0){}
+        else{getdata($result,$cout--);}
+  
 } else {
   
 }
