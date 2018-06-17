@@ -26,7 +26,7 @@ getdata($result,3);
 getdata($result,5);
 function getdata($result,$cout){
 if ($result->num_rows > 0) {
-    $row = $result->fetch_assoc() 
+    $row = $result->fetch_assoc();
     echo $row['USERNAME'];
     
     ?>
