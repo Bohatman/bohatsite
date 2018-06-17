@@ -27,6 +27,7 @@ getdata($result,5);
 function getdata($result,$cout){
 if ($result->num_rows > 0) {
     $row = $result->fetch_assoc() 
+    if($row = null){return;}
     ?>
     <div class="media border p-3">
   <img src=".\pic\img_avatar3.png" alt="John Doe" class="mr-3 mt-3 rounded-circle" style="width:60px;">
