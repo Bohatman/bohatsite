@@ -48,7 +48,15 @@ $sql = "SELECT * FROM short_post ORDER BY POSTID";
 $result = $link->query($sql);
 if ($result->num_rows > 0) {
   while($row = $result->fetch_assoc()) {
-      echo "id: " . $row["DATE"]. " - Name: " . $row["USERNAME"]. " " . $row["DATA"]. "<br>";
+    ?>
+<div class="media border p-3">
+  <img src="img_avatar3.png" alt="John Doe" class="mr-3 mt-3 rounded-circle" style="width:60px;">
+  <div class="media-body">
+    <h4><?php$row["USERNAME"]?><small><i>Posted on <?php$row["DATA"]?></i></small></h4>
+    <p><?php$row["DATA"]?></p>
+  </div>
+</div>
+    <?php
   }
 } else {
   echo "0 results";
