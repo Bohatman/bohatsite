@@ -3,31 +3,23 @@
 
 <body>
 
-    <h1>The onclick Event</h1>
-
-    <p>The onclick event is used to trigger a function when an element is clicked on.</p>
-
-    <p>Click the button to trigger a function that will output "Hello World" in a p element with id="demo".</p>
-
-    <button onclick="myFunction()">Click me</button>
-
-    <p id="demo"></p>
+<input type="submit" class="button" name="insert" value="insert" />
+<input type="submit" class="button" name="select" value="select" />
 
     <script>
-        function myFunction() {
-            <?php 
-                echo "STILL WORK";
-                callMe();
-                ?>
-            document.getElementById("demo").innerHTML = "Hello World";
-        }
-    </script>
-    <?php 
-        function callMe(){
-            echo "Hello";
-        }
-    ?>
+$(document).ready(function(){
+    $('.button').click(function(){
+        var clickBtnValue = $(this).val();
+        var ajaxurl = 'ajax.php',
+        data =  {'action': clickBtnValue};
+        $.post(ajaxurl, data, function (response) {
+            // Response div goes here.
+            alert("action performed successfully");
+        });
+    });
 
+});
+    </script>
 </body>
 
 </html>
