@@ -34,7 +34,7 @@ $allcount = $allcount_fetch['allcount'];
 $query = "select * from short_post order by id asc limit 0,$rowperpage ";
 $result = $link->query($query);
 
-while($row = mysqli_fetch_array($result)){
+while($row = $result->fetch_assoc()){
 
   $id = $row['POSTID'];
   $title = $row['	USERNAME'];
