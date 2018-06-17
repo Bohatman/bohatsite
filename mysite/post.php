@@ -52,8 +52,8 @@ if ($result->num_rows > 0) {
 <div class="media border p-3">
   <img src="img_avatar3.png" alt="John Doe" class="mr-3 mt-3 rounded-circle" style="width:60px;">
   <div class="media-body">
-    <h4><?php$row["USERNAME"]?><small><i>Posted on <?php$row["DATA"]?></i></small></h4>
-    <p><?php$row["DATA"]?></p>
+    <h4><?phpecho $row["USERNAME"];?><small><i>Posted on <?php echo $row["DATA"];?></i></small></h4>
+    <p><?phpecho $row["DATA"];?></p>
   </div>
 </div>
     <?php
