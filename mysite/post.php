@@ -28,26 +28,24 @@ function getdata($result,$cout){
 if ($result->num_rows > 0) {
     $row = $result->fetch_assoc();
     if($row['USERNAME']!=null){
-        
-    
-    
     ?>
     <div class="media border p-3">
   <img src=".\pic\img_avatar3.png" alt="John Doe" class="mr-3 mt-3 rounded-circle" style="width:60px;">
   <div class="media-body">
     <h4><?= $row['USERNAME']?> <small><i>Posted on <?= $row['DATE']?></i></small></h4>
     <p><?= $row['DATA']?></p>
-    <div class="float-right">
+  </div>
+  
+    </div>
+    <?php
+    /*
+        <div class="float-right">
         <form action = "del.php" method = "post">
             <input type="hidden" name = "id" value =<?=$row['POSTID']?>>
         <button type="submit" class="btn btn-primary mb-2">Submit</button>
         </form>
     </div>
-  </div>
-  
-    </div>
-    <?php
-    
+    */
     if($cout >0 ){getdata($result,$cout-1);}
         
 }
