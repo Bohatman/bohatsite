@@ -21,7 +21,7 @@
 
 <?php
 
-$rowperpage = 3;
+$rowperpage = 1;
 
 // counting total number of posts
 $allcount_query = "SELECT count(*) as allcount FROM short_post";
