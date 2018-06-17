@@ -23,7 +23,7 @@ $(document).ready(function(){
 <div class="postList">
     <?php
     // Include the database configuration file
-    include 'dbConfig.php';
+    include 'config.php';
     
     // Get records from the database
     $query = $link->query("SELECT * FROM short_post ORDER BY POSTID DESC LIMIT 2");
