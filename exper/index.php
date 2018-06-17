@@ -9,7 +9,7 @@ $(document).ready(function(){
         $('.loding').show();
         $.ajax({
             type:'POST',
-            url:'ajax_more-without-design.php',
+            url:'ajax_more.php',
             data:'id='+ID,
             success:function(html){
                 $('#show_more_main'+ID).remove();
