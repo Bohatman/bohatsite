@@ -32,6 +32,7 @@ if ($result->num_rows > 0) {
     <p><?= $row['DATA']?></p>
     <div class="float-right">
         <form action = "del.php" method = "post">
+            <input type="hidden" name = "id" value =<?=$row['POSTID']?>>
         <button type="submit" class="btn btn-primary mb-2">Submit</button>
         </form>
     </div>
