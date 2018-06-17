@@ -23,10 +23,9 @@ include 'bndb.php';
 $sql = "SELECT * FROM short_post ORDER BY POSTID desc";
 $result = $link->query($sql);
 getdata($result,3);
+getdata($result,5);
 function getdata($result,$cout){
 if ($result->num_rows > 0) {
-  while($cout>0){
-    $cout--;
     $row = $result->fetch_assoc() 
     ?>
     <div class="media border p-3">
@@ -44,9 +43,9 @@ if ($result->num_rows > 0) {
   
     </div>
     <?php
-  }
+  getdata($result,$cout--);
 } else {
-  echo "0 results";
+  
 }
 }
 ?>
