@@ -31,10 +31,10 @@ $allcount_fetch = mysqli_fetch_array($allcount_result);
 $allcount = $allcount_fetch['allcount'];
 
 // select first 3 posts
-$query = "select * from short_post order by id asc limit 0,$rowperpage ";
-$result = $link->query($query);
+$query = "select * from short_post order by POSTID asc limit 0,$rowperpage ";
+$result = mysqli_query($link,$query);
 
-while($row = $result->fetch_assoc()){
+while($row = mysqli_fetch_array($result)){
 
   $id = $row['POSTID'];
   $title = $row['	USERNAME'];
