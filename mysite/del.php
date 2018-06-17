@@ -1,5 +1,5 @@
 <?php 
-require 'bndb.php';
+require 'config.php';
 $postid = $_POST['id'];
 $sql = "DELETE FROM short_post WHERE POSTID=".$postid;
 
