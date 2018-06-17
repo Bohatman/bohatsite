@@ -43,8 +43,8 @@ if ($result->num_rows > 0) {
   
     </div>
     <?php
-    if($cout <=0){}
-        else{getdata($result,$cout--);}
+    if($cout >=0){getdata($result,$cout--);}
+        
   
 } else {
   
