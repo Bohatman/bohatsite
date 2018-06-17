@@ -3,7 +3,7 @@
 $username = $_POST['username'];
 $comment =$_POST['comment'];
 date_default_timezone_set("Asia/Bangkok");
-$date = date("y-m-d");
+$date = date("Y-m-d h:i:s");
 $connectstr_dbhost = '';
 $connectstr_dbname = '';
 $connectstr_dbusername = '';
