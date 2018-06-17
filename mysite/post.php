@@ -44,7 +44,7 @@ if (!$link) {
     exit;
 }
 mysqli_set_charset($link, "utf8");
-$sql = "SELECT * FROM short_post";
+$sql = "SELECT * FROM short_post ORDER BY POSTID";
 $result = $link->query($sql);
 if ($result->num_rows > 0) {
   while($row = $result->fetch_assoc()) {
