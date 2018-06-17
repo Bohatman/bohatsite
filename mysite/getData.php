@@ -19,7 +19,7 @@ while($row = mysqli_fetch_array($result)){
     $date = $row['DATE'];
 
     // Creating HTML structure
-    $html .= '<div id="post_'.$id.'" class="media border p-3">';
+    $html .= '<div id="post_'.$id.'" class="post media border p-3">';
     $html .= '<img src=".\pic\img_avatar3.png" alt="John Doe" class="mr-3 mt-3 rounded-circle" style="width:60px;">';
     $html .= '<div class="media-body">';
     $html .= '<h4>'.$title.'<small><i>Posted on '.$date.'</i></small></h4>';

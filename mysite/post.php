@@ -40,7 +40,7 @@ while($row = mysqli_fetch_array($result)){
   $title = $row['	USERNAME'];
   $content = $row['DATA'];
   $date = $row['DATE'];
-  echo '<div id="post_'.$id.'" class="media border p-3">';
+  echo '<div id="post_'.$id.'" class="post media border p-3">';
   echo '<img src=".\pic\img_avatar3.png" alt="John Doe" class="mr-3 mt-3 rounded-circle" style="width:60px;">';
   echo '<div class="media-body">';
   echo '<h4>'.$title.'<small><i>Posted on '.$date.'</i></small></h4>';
