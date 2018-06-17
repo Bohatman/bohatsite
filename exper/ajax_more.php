@@ -5,14 +5,14 @@ if(!empty($_POST["id"])){
     include 'config.php';
     
     // Count all records except already displayed
-    $query = $link->query("SELECT COUNT(*) as num_rows FROM short_post WHERE POSTID < ".$_POST['id']." ORDER BY id DESC");
+    $query = $link->query("SELECT COUNT(*) as num_rows FROM short_post WHERE POSTID < ".$_POST['id']." ORDER BY POSTID DESC");
     $row = $query->fetch_assoc();
     $totalRowCount = $row['num_rows'];
     
     $showLimit = 2;
     
     // Get records from the database
-    $query = $link->query("SELECT * FROM short_post WHERE POSTID < ".$_POST['id']." ORDER BY id DESC LIMIT $showLimit");
+    $query = $link->query("SELECT * FROM short_post WHERE POSTID < ".$_POST['id']." ORDER BY POSTID DESC LIMIT $showLimit");
 
     if($query->num_rows > 0){ 
         while($row = $query->fetch_assoc()){
