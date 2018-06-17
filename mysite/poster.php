@@ -1,6 +1,10 @@
 <meta charset="utf-8">
 <?php
 include 'bndb.php';
+$username = $_POST['username'];
+$comment =$_POST['comment'];
+date_default_timezone_set("Asia/Bangkok");
+$date = date("Y-m-d h:i:s");
 
 $sql = "INSERT INTO short_post (DATE, DATA, USERNAME) 
 VALUES ('".$date."',\"".$comment."\",\"".$username."\")";
