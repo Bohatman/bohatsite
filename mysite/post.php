@@ -27,9 +27,7 @@ getdata($result,5);
 function getdata($result,$cout){
 if ($result->num_rows > 0) {
     $row = $result->fetch_assoc() 
-    if($row['USERNAME']==""){
-        echo "WORK";
-    }
+    echo $row['USERNAME'];
     
     ?>
     <div class="media border p-3">
