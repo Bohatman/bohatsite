@@ -13,7 +13,8 @@
 	<link rel="stylesheet" href="css/demo.css">
 	<link rel="stylesheet" href="css/footer-distributed-with-address-and-phones.css">
 	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
-	<link href="http://fonts.googleapis.com/css?family=Cookie" rel="stylesheet" type="text/css">
+  <link href="http://fonts.googleapis.com/css?family=Cookie" rel="stylesheet" type="text/css">
+  <link href="style.css" type="text/css" rel="stylesheet">
   <script src="script/loadmore.js"></script>
 </head>
 <body>
