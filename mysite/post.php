@@ -22,27 +22,30 @@
 include 'bndb.php';
 $sql = "SELECT * FROM short_post ORDER BY POSTID desc";
 $result = $link->query($sql);
-if ($result->num_rows > 0) {
-  while($row = $result->fetch_assoc()) {
-    ?>
-    <div class="media border p-3">
-  <img src=".\pic\img_avatar3.png" alt="John Doe" class="mr-3 mt-3 rounded-circle" style="width:60px;">
-  <div class="media-body">
-    <h4><?= $row['USERNAME']?> <small><i>Posted on <?= $row['DATE']?></i></small></h4>
-    <p><?= $row['DATA']?></p>
-    <div class="float-right">
-        <form action = "del.php" method = "post">
-            <input type="hidden" name = "id" value =<?=$row['POSTID']?>>
-        <button type="submit" class="btn btn-primary mb-2">Submit</button>
-        </form>
-    </div>
-  </div>
-  
-    </div>
-    <?php
-  }
-} else {
-  echo "0 results";
+getdata(2);
+?>
+<?php 
+function getdata($cout){
+
+       if($row = $result->fetch_assoc() &&$cout!=0) {
+          ?>
+          <div class="media border p-3">
+        <img src=".\pic\img_avatar3.png" alt="John Doe" class="mr-3 mt-3 rounded-circle" style="width:60px;">
+        <div class="media-body">
+          <h4><?= $row['USERNAME']?> <small><i>Posted on <?= $row['DATE']?></i></small></h4>
+          <p><?= $row['DATA']?></p>
+          <div class="float-right">
+              <form action = "del.php" method = "post">
+                  <input type="hidden" name = "id" value =<?=$row['POSTID']?>>
+              <button type="submit" class="btn btn-primary mb-2">Submit</button>
+              </form>
+          </div>
+        </div>
+        
+          </div>
+          <?php
+        }
+        getdata($cout-1);
 }
 ?>
 
