@@ -20,7 +20,7 @@
 <?php 
 
 include 'bndb.php';
-$sql = "SELECT * FROM short_post ORDER BY POSTID";
+$sql = "SELECT * FROM short_post ORDER BY POSTID desc";
 $result = $link->query($sql);
 if ($result->num_rows > 0) {
   while($row = $result->fetch_assoc()) {
