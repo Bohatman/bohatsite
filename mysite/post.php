@@ -27,9 +27,9 @@ getdata($result,5);
 function getdata($result,$cout){
 if ($result->num_rows > 0) {
     $row = $result->fetch_assoc();
-    if($row['USERNAME']==null){
-        echo 'H';
-    }
+    if($row['USERNAME']!=null){
+        
+    
     
     ?>
     <div class="media border p-3">
@@ -50,7 +50,7 @@ if ($result->num_rows > 0) {
     
     if($cout >=0 ){getdata($result,$cout-1);}
         
-
+}
 } else {
   
 }
