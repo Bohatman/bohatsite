@@ -30,6 +30,11 @@ if ($result->num_rows > 0) {
   <div class="media-body">
     <h4><?= $row['USERNAME']?> <small><i>Posted on <?= $row['DATE']?></i></small></h4>
     <p><?= $row['DATA']?></p>
+    <div class="float-right">
+        <form action = "del.php" method = "post">
+        <button type="submit" class="btn btn-primary mb-2">Submit</button>
+        </form>
+    </div>
   </div>
   
     </div>
