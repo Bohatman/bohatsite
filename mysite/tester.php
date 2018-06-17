@@ -23,7 +23,7 @@
 $(document).ready(function(){
     $('.button').click(function(){
         var clickBtnValue = $(this).val();
-        var ajaxurl = 'some.php',
+        var ajaxurl = 'tester.php',
         data =  {'action': clickBtnValue};
         $.post(ajaxurl, data, function (response) {
             // Response div goes here.
@@ -33,6 +33,28 @@ $(document).ready(function(){
 
 });
     </script>
+    <?php
+if (isset($_POST['action'])) {
+    switch ($_POST['action']) {
+        case 'insert':
+            insert();
+            break;
+        case 'select':
+            select();
+            break;
+    }
+}
+
+function select() {
+    echo "The select function is called.";
+    exit;
+}
+
+function insert() {
+    echo "The insert function is called.";
+    exit;
+}
+?>
 </body>
 
 </html>
