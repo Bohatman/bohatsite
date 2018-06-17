@@ -28,8 +28,8 @@ if (!$link) {
     exit;
 }
 
-$sql = "INSERT INTO short_post (DATE, DATA) 
-VALUES ('".$date."',\"".$comment."\")";
+$sql = "INSERT INTO short_post (DATE, DATA, USERNAME) 
+VALUES ('".$date."',\"".$comment."\",\"".$username."\")";
 
 if ($link->query($sql) === TRUE) {
     echo "New record created successfully";
