@@ -32,7 +32,7 @@ $allcount = $allcount_fetch['allcount'];
 
 // select first 3 posts
 $query = "select * from short_post order by id asc limit 0,$rowperpage ";
-$result = mysqli_query($link,$query);
+$result = $link->query($query);
 
 while($row = mysqli_fetch_array($result)){
 
