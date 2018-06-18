@@ -1,4 +1,9 @@
-
+<<!DOCTYPE html>
+<html>
+<head>
+<meta name="robots" content="noindex, nofollow" />
+</head>
+<body>
 <?php
 require 'config.php';
 $username = $_POST['username'];
@@ -18,4 +23,6 @@ if ($link->query($sql) === TRUE) {
 
 mysqli_close($link);
 ?>
-
+    
+    </body>
+</html>

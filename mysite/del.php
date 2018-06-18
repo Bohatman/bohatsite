@@ -1,3 +1,9 @@
+<<!DOCTYPE html>
+<html>
+<head>
+<meta name="robots" content="noindex, nofollow" />
+</head>
+<body>
 <?php 
 require 'config.php';
 $postid = $_POST['id'];
@@ -9,3 +15,5 @@ if ($link->query($sql) === TRUE) {
     echo "Error: " . $sql . "<br>" . $link->error;
 }
 ?>
+</body>
+</html>
