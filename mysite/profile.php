@@ -48,56 +48,15 @@ require 'config.php';
             $lang = $row['lang'];
             $skill = $row['skill'];
             ?>
-                    <div class="panel-body">   
-        
-        <div class="form-group">
-            <div class="input-group">
-                <span class="input-group-addon"><span class="glyphicon glyphicon-user"></span>
-                </span>
-                <input type="text" class="form-control" placeholder="First Name" />
-            </div>
-        </div>
-        
-        <div class="form-group">
-            <div class="input-group">
-                <span class="input-group-addon"><span class="glyphicon glyphicon-user"></span></span>
-                <input type="text" class="form-control" placeholder="Last Name" />
-            </div>
-        </div>
-        <div class="form-group">
-            <div class="input-group">
-                <span class="input-group-addon"><span class="glyphicon glyphicon-envelope"></span></span>
-                <input type="text" class="form-control" placeholder="Email" />
-            </div>
-        </div>
-        
-        <div class="form-group">
-            <div class="input-group">
-                <span class="input-group-addon"><span class="glyphicon glyphicon-lock"></span></span>
-                <input type="password" class="form-control" placeholder="New Password" />
-            </div>
-        </div>
-        
-        <div class="form-group">
-            <div class="input-group">
-                <span class="input-group-addon"><span class="glyphicon glyphicon-home"></span></span>
-                <input type="text" class="form-control" placeholder="Address" />
-            </div>
-        </div>
-        
-        <div class="form-group">
-            <div class="input-group">
-                <span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span></span>
-                <input type="text" class="form-control" placeholder="Age" />
-            </div>
-        </div>
-        
-        <div class="form-group">
-            <div class="input-group">
-                <span class="input-group-addon"><span class="glyphicon glyphicon-credit-card"></span></span>
-                <input type="text" class="form-control" placeholder="Credit card" />
-            </div>
-        </div>
+    <form>
+    <div class="input-group mb-3">
+    <div class="input-group-prepend">
+      <span class="input-group-text">FRIST NAME</span>
+    </div>
+    <input type="text" class="form-control" placeholder="<?php echo $fname;?>">
+  </div>
+
+    </form>
  </div></div></div>
         </div>
         <div class="navbar navbar-expand-lg navbar-light bg-light fixed-bottom">
