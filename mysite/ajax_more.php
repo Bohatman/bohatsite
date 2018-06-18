@@ -9,7 +9,7 @@ if(!empty($_POST["id"])){
     $row = $query->fetch_assoc();
     $totalRowCount = $row['num_rows'];
     
-    $showLimit = 2;
+    $showLimit = 3;
     
     // Get records from the database
     $query = $link->query("SELECT * FROM short_post WHERE POSTID < ".$_POST['id']." ORDER BY POSTID DESC LIMIT $showLimit");
@@ -21,7 +21,15 @@ if(!empty($_POST["id"])){
             $date = $row['DATE'];
             $username=$row['USERNAME'];
     ?>
-        <div class="list_item"><?php echo $username; ?></div>
+    <div class="list_item">
+    <div class="media border p-3">
+    <img src=".\pic\img_avatar3.png" alt="Avatar" class="mr-3 mt-3 rounded-circle" style="width:60px;">
+    <div class="media-body">
+    <h4><?php echo $username; ?><small><i> Posted on <?php echo $date; ?></i></small></h4>
+    <p><?php echo $content; ?></p>
+    </div>
+</div>
+  </div>
     <?php } ?>
     <?php if($totalRowCount > $showLimit){ ?>
         <div class="show_more_main" id="show_more_main<?php echo $postID; ?>">

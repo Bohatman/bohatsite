@@ -37,7 +37,7 @@ $(document).ready(function(){
 <div class="postList">
     <?php
     include 'config.php';
-    $query = $link->query("SELECT * FROM short_post ORDER BY POSTID DESC LIMIT 2");
+    $query = $link->query("SELECT * FROM short_post ORDER BY POSTID DESC LIMIT 3");
     
     if($query->num_rows > 0){ 
         while($row = $query->fetch_assoc()){ 
