@@ -27,10 +27,11 @@
 </div>
         </div>
         <div class="col-sm-9">
-            <div class="border p-3">
-            <div class="alert alert-success">
+        <div class="alert alert-success">
             <strong>ประกาศ: </strong>สามารถติดตามผมผ่าน Youtube <a href="https://www.youtube.com/channel/UC8DPEY4nCnJLetSerURxHtg" class="alert-link" target="_blank">คลิก!</a>.
             </div>
+            <div class="border p-3">
+
                <br><h1>ข้อมูลทั่วไป</h1><hr><br>
 <?php 
 require 'config.php';
