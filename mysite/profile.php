@@ -78,6 +78,19 @@ require 'config.php';
 </div>
 
 </div>
+
+<div class = "row">
+
+        <div class="col-sm-5">
+    <div class="input-group mb-3">
+    <div class="input-group-prepend">
+      <span class="input-group-text">CITY</span>
+    </div>
+    <input type="text" class="form-control" placeholder="<?php echo $city;?>" readonly>
+  </div>
+</div>
+
+</div>
     </form>
  </div></div></div>
         </div>
