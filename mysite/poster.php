@@ -10,6 +10,7 @@ $sql = "INSERT INTO short_post (DATE, DATA, USERNAME)
 VALUES ('".$date."',\"".$comment."\",\"".$username."\")";
 
 if ($link->query($sql) === TRUE) {
+   header('Location: contact.php');
     echo "New record created successfully";
 } else {
     echo "Error: " . $sql . "<br>" . $link->error;
