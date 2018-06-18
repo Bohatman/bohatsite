@@ -48,7 +48,7 @@
               </h6>
             </p>
             <p class="card-text">Netbean,Visual Studio Code</p>
-            <a href="profile.html" class="btn btn-primary">See Profile</a>
+            <a href="profile.php" class="btn btn-primary">See Profile</a>
           </div>
         </div>
         <!--แนะนำตัว(end)-->
