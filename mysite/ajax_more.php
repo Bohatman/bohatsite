@@ -33,9 +33,11 @@ if(!empty($_POST["id"])){
     <?php } ?>
     <?php if($totalRowCount > $showLimit){ ?>
         <div class="show_more_main" id="show_more_main<?php echo $postID; ?>">
-        <button type="button" class="btn btn-outline-primary"><span id="<?php echo $postID; ?>" class="show_more" title="Load more posts">Show more</span></button>
-        <span class="loding" style="display: none;"><span class="loding_txt">Loading...</span></span>
+    <div align="right">
+    <span id="<?php echo $postID; ?>" class="show_more" title="Load more posts"><button type="button" class="btn btn-outline-primary">Show more</button></span>
+    <span class="loding" style="display: none;"><span class="loding_txt">Loading...</span></span>
         </div>
+    </div>
     <?php } ?>
 <?php
     }
