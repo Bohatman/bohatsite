@@ -159,21 +159,21 @@ require 'config.php';
   </ul>
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <img src=".\pic\azurebootcamp.jpg" alt="Los Angeles" width="100%" height="50%">
+      <img src=".\pic\azurebootcamp.jpg" alt="Microsoft Azure" width="100%" height="50%">
       <div class="carousel-caption">
         <h3>บริษัท ไมโครซอฟท์ (ประเทศไทย) จำกัด</h3>
         <p>กิจกรรมเกี่ยวกับการใช้งาน Microsoft Azure</p>
       </div>   
     </div>
     <div class="carousel-item">
-      <img src=".\pic\azuregekk.jpg" alt="Chicago" width="100%" height="50%">
+      <img src=".\pic\azuregekk.jpg" alt="Hackathon 2018" width="100%" height="50%">
       <div class="carousel-caption">
         <h3>Chulalongkorn University</h3>
         <p>การแข่งขัน Hackathon</p>
       </div>   
     </div>
     <div class="carousel-item">
-      <img src=".\pic\parallax.jpg" alt="New York" width="100%" height="50%">
+      <img src=".\pic\parallax.jpg" alt="Parallax" width="100%" height="50%">
       <div class="carousel-caption">
         <h3>King Mongkut's University of Technology North Bangkok</h3>
         <p>อบรมการสร้างเว็บไซต์แบบ Parallax</p>
