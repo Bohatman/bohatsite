@@ -26,11 +26,11 @@
             <div class="card-footer">BIRTHDAY</div>
 </div>
         </div>
+        <div class="col-sm-9">
 <?php 
 require 'config.php';
     $query = $link->query("SELECT * FROM infomation");
-    if($query->num_rows > 0){ 
-        while($row = $query->fetch_assoc()){ 
+    $row = $query->fetch_assoc();
             $fname = $row['fname'];
             $lname = $row['lname'];
             $city = $row['city'];
@@ -41,10 +41,10 @@ require 'config.php';
             $AGE = $row['AGE'];
             $lang = $row['lang'];
             $skill = $row['skill'];
-        }
-    }
+        
+    
             ?>
- </div>
+ </div></div>
         </div>
         <div class="navbar navbar-expand-lg navbar-light bg-light fixed-bottom">
     <div class="container">
