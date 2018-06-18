@@ -13,7 +13,24 @@
   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
   <link href="http://fonts.googleapis.com/css?family=Cookie" rel="stylesheet" type="text/css">
 </head>
-
+<script type="text/javascript">
+$(document).ready(function(){
+    $(document).on('click','.show_more',function(){
+        var ID = $(this).attr('id');
+        $('.show_more').hide();
+        $('.loding').show();
+        $.ajax({
+            type:'POST',
+            url:'ajax_more.php',
+            data:'id='+ID,
+            success:function(html){
+                $('#show_more_main'+ID).remove();
+                $('.postList').append(html);
+            }
+        });
+    });
+});
+</script>
 <body>
   <!-- FACEBOOK START-->
 
@@ -46,7 +63,7 @@
                 <center><h1>Let's Talk</h1>
                 <p><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">CLICK HERE !</button></p> </center>
               </div>
-              
+              <?php include 'post.php';?>
                 
             </div>
         </div>
@@ -58,7 +75,7 @@
         
         <!-- Modal body -->
         <div class="modal-body">
-          
+        <?php include 'poster.html' ?>
         </div>
         
         <!-- Modal footer -->
@@ -66,14 +83,7 @@
       </div>
     </div>
   </div>
-        <!-- Modal footer -->
-        <div class="modal-footer">
-          <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
-        </div>
 
-      </div>
-    </div>
-  </div>
   <!-- The Modal -->
   <a name="Bot"></a>
   <!--Buttom-->
