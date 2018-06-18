@@ -1,4 +1,4 @@
-<meta charset="utf-8">
+
 <html>
 <head>
   <title>Puttipong AKA. BOHAT</title>
