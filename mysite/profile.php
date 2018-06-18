@@ -47,10 +47,57 @@ require 'config.php';
             $AGE = $row['AGE'];
             $lang = $row['lang'];
             $skill = $row['skill'];
-            echo '<p><font color="#C0C0C0">ชื่อ </font>'.$fname.'<font color="#C0C0C0"> นามสกุล </font>'.$lname.'<font color="#C0C0C0"> เพศ </font>'.$sex.'<font color="#C0C0C0"> อายุ </font>'.$AGE.'<font color="#C0C0C0"> จังหวัด </font>'.$city.'<font color="#C0C0C0"> เบอร์ติดต่อ </font>'.$tel.'</p>';
-        
-    
             ?>
+                    <div class="panel-body">   
+        
+        <div class="form-group">
+            <div class="input-group">
+                <span class="input-group-addon"><span class="glyphicon glyphicon-user"></span>
+                </span>
+                <input type="text" class="form-control" placeholder="First Name" />
+            </div>
+        </div>
+        
+        <div class="form-group">
+            <div class="input-group">
+                <span class="input-group-addon"><span class="glyphicon glyphicon-user"></span></span>
+                <input type="text" class="form-control" placeholder="Last Name" />
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="input-group">
+                <span class="input-group-addon"><span class="glyphicon glyphicon-envelope"></span></span>
+                <input type="text" class="form-control" placeholder="Email" />
+            </div>
+        </div>
+        
+        <div class="form-group">
+            <div class="input-group">
+                <span class="input-group-addon"><span class="glyphicon glyphicon-lock"></span></span>
+                <input type="password" class="form-control" placeholder="New Password" />
+            </div>
+        </div>
+        
+        <div class="form-group">
+            <div class="input-group">
+                <span class="input-group-addon"><span class="glyphicon glyphicon-home"></span></span>
+                <input type="text" class="form-control" placeholder="Address" />
+            </div>
+        </div>
+        
+        <div class="form-group">
+            <div class="input-group">
+                <span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span></span>
+                <input type="text" class="form-control" placeholder="Age" />
+            </div>
+        </div>
+        
+        <div class="form-group">
+            <div class="input-group">
+                <span class="input-group-addon"><span class="glyphicon glyphicon-credit-card"></span></span>
+                <input type="text" class="form-control" placeholder="Credit card" />
+            </div>
+        </div>
  </div></div></div>
         </div>
         <div class="navbar navbar-expand-lg navbar-light bg-light fixed-bottom">
