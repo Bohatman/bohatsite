@@ -34,10 +34,33 @@
         <!--เมนูด้านบน(end)-->
         <div class ="container" style="margin-top:60px ;">
             <div class="border p-3">
+              <div class="jumbotron">
+                <center><h1>Let's Talk</h1>
+                <p>Bootstrap is the most popular HTML, CSS...</p> </center>
+              </div>
               <?php include 'post.php';?>
                 
             </div>
         </div>
-    
+
+    <!-- The Modal -->
+  <div class="modal fade" id="myModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        
+        <!-- Modal body -->
+        <div class="modal-body">
+          <?php include 'poster.html'?>
+        </div>
+        
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+
     </body>
         </html>
