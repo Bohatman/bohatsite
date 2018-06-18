@@ -41,13 +41,10 @@ require 'config.php';
             $AGE = $row['AGE'];
             $lang = $row['lang'];
             $skill = $row['skill'];
+        }
+    }
             ?>
-
-
-
-            <?php}?>
-    <?php}?>
-?>  </div>
+ </div>
         </div>
 </body>
 </html>
