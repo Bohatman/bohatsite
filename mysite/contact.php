@@ -34,7 +34,7 @@
         <!--เมนูด้านบน(end)-->
         <div class ="container" style="margin-top:60px ;">
             <div class="border p-3">
-
+              <?php include 'post.php';?>
                 
             </div>
         </div>
