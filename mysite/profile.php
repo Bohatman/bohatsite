@@ -150,7 +150,7 @@ require 'config.php';
 </div>
 
 <div class = "row">
-<div class = "col-sm-9">
+<div class = "col-sm-12">
 <div id="demo" class="carousel slide" data-ride="carousel">
   <ul class="carousel-indicators">
     <li data-target="#demo" data-slide-to="0" class="active"></li>
