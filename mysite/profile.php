@@ -13,9 +13,41 @@
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
     <link href="http://fonts.googleapis.com/css?family=Cookie" rel="stylesheet" type="text/css">
 </head>
-
 <body>
+      <!-- เมนูด้านบน(start)-->
+<?php include 'nav.html';?>
+  <!--เมนูด้านบน(end)-->
+<div class="container" style="margin-top:60px;margin-bottom: 120px;">
+    <div class = "row">
+        <div class = "col-sm-3">
+        <div class="card">
+            <div class="card-header">PICTURE</div>
+            <div class="card-body"><img class="card-img-top" src=".\pic\puttipong.jpg" alt="Puttipong" style="width:100%"></div> 
+            <div class="card-footer">BIRTHDAY</div>
+</div>
+        </div>
+<?php 
+require 'config.php';
+    $query = $link->query("SELECT * FROM infomation");
+    if($query->num_rows > 0){ 
+        while($row = $query->fetch_assoc()){ 
+            $fname = $row['fname'];
+            $lname = $row['lname'];
+            $city = $row['city'];
+            $sex = $row['sex'];
+            $study = $row['study'];
+            $tel = $row['tel'];
+            $work = $row['work'];
+            $AGE = $row['AGE'];
+            $lang = $row['lang'];
+            $skill = $row['skill'];
+            ?>
 
 
+
+            <?php}?>
+    <?php}?>
+?>  </div>
+        </div>
 </body>
 </html>
