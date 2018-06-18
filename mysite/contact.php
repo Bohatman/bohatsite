@@ -50,7 +50,7 @@
         
         <!-- Modal body -->
         <div class="modal-body">
-          <?php include 'poster.html'?>
+          <?php include 'poster.html';?>
         </div>
         
         <!-- Modal footer -->
