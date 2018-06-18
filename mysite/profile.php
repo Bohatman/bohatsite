@@ -59,7 +59,7 @@ require 'config.php';
   </div>
 </div>
 
-<div class="col-sm-3">
+<div class="col-sm-2">
 <div class="input-group mb-3">
     <div class="input-group-prepend">
       <span class="input-group-text">SEX</span>
@@ -68,7 +68,7 @@ require 'config.php';
   </div>
 </div>
 
-<div class="col-sm-1">
+<div class="col-sm-2">
 <div class="input-group mb-3">
     <div class="input-group-prepend">
       <span class="input-group-text">AGE</span>
