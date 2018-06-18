@@ -42,8 +42,19 @@ $(document).ready(function(){
     if($query->num_rows > 0){ 
         while($row = $query->fetch_assoc()){ 
             $postID = $row['POSTID'];
+            $content = $row['DATA']; 
+            $date = $row['DATE'];
+            $username=$row['USERNAME'];
     ?>
-    <div class="list_item"><?php echo $row['USERNAME']; ?></div>
+    <div class="list_item">
+    <div class="media border p-3">
+    <div class="media-body">
+    <h4><?php echo $username; ?><small><i> Posted on <?php echo $date; ?></i></small></h4>
+    <p><?php echo $content; ?></p>
+    </div>
+  <img src=".\pic\img_avatar3.png" alt="Avatar" class="ml-3 mt-3 rounded-circle" style="width:60px;">
+</div>
+  </div>
     <?php } ?>
     <div class="show_more_main" id="show_more_main<?php echo $postID; ?>">
         <span id="<?php echo $postID; ?>" class="show_more" title="Load more posts">Show more</span>
