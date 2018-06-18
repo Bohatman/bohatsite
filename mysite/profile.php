@@ -91,6 +91,20 @@ require 'config.php';
 </div>
 
 </div>
+
+<div class = "row">
+
+<div class="col-sm-7">
+<div class="input-group mb-3">
+<div class="input-group-prepend">
+<span class="input-group-text">UNIVERSITY</span>
+</div>
+<input type="text" class="form-control" placeholder="<?php echo $study;?>" readonly>
+</div>
+</div>
+
+</div>
+
     </form>
  </div></div></div>
         </div>
