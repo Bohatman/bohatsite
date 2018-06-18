@@ -51,9 +51,9 @@ require 'config.php';
     <form>
     <div class="input-group mb-3">
     <div class="input-group-prepend">
-      <span class="input-group-text">FRIST NAME</span>
+      <span class="input-group-text">NAME</span>
     </div>
-    <input type="text" class="form-control" placeholder="<?php echo $fname;?>">
+    <input type="text" class="form-control" placeholder="<?php echo $fname." ".$lname;?>" readonly>
   </div>
 
     </form>
