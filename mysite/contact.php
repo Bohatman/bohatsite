@@ -11,6 +11,57 @@
   <link rel="stylesheet" href="./fonts/style.css" />
   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
   <link href="http://fonts.googleapis.com/css?family=Cookie" rel="stylesheet" type="text/css">
+  <style type="text/css">
+@font-face {
+    font-family: 'THSarabunNew';
+    src: url('.\fonts\thsarabunnew-webfont.eot');
+    src: url('.\fonts\thsarabunnew-webfont.eot?#iefix') format('embedded-opentype'),
+         url('.\fonts\thsarabunnew-webfont.woff') format('woff'),
+         url('.\fonts\thsarabunnew-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'THSarabunNew';
+    src: url('.\fonts\thsarabunnew_bolditalic-webfont.eot');
+    src: url('.\fonts\thsarabunnew_bolditalic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('.\fonts\thsarabunnew_bolditalic-webfont.woff') format('woff'),
+         url('.\fonts\thsarabunnew_bolditalic-webfont.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+
+}
+
+@font-face {
+    font-family: 'THSarabunNew';
+    src: url('.\fonts\thsarabunnew_italic-webfont.eot');
+    src: url('.\fonts\thsarabunnew_italic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('.\fonts\thsarabunnew_italic-webfont.woff') format('woff'),
+         url('.\fonts\thsarabunnew_italic-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+
+}
+
+@font-face {
+    font-family: 'THSarabunNew';
+    src: url('.\fonts\thsarabunnew_bold-webfont.eot');
+    src: url('.\fonts\thsarabunnew_bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('.\fonts\thsarabunnew_bold-webfont.woff') format('woff'),
+         url('.\fonts\thsarabunnew_bold-webfont.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+
+}
+
+
+body {
+	font-family: 'THSarabunNew';
+}
+.THSarabunNew{ font-family: 'THSarabunNew'; }
+</style>
 </head>
 <body>
   <!-- เมนูด้านบน(start)-->
