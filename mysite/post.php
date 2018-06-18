@@ -55,7 +55,7 @@ if($query->num_rows > 0){
       echo '<span id="'.$postID.'"class="show_more" title="Load more posts">Show more</span>';
       echo '<span class="loding" style="display: none;"><span class="loding_txt">Loading...</span></span>';
       echo '</div>';
-
+  }
 ?>
 
 </body>
