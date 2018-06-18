@@ -42,7 +42,7 @@ require 'config.php';
             $city = $row['city'];//c
             $sex = $row['sex'];//c
             $study = $row['study'];//c
-            $tel = $row['tel'];
+            $tel = $row['tel'];//c
             $work = $row['work'];
             $AGE = $row['AGE'];//c
             $lang = $row['lang'];
@@ -113,6 +113,15 @@ require 'config.php';
 <span class="input-group-text">TEL.</span>
 </div>
 <input type="text" class="form-control" placeholder="<?php echo $tel;?>" readonly>
+</div>
+</div>
+
+<div class="col-sm-5">
+<div class="input-group mb-3">
+<div class="input-group-prepend">
+<span class="input-group-text">LANGUAGE</span>
+</div>
+<input type="text" class="form-control" placeholder="<?php echo $lang;?>" readonly>
 </div>
 </div>
 
