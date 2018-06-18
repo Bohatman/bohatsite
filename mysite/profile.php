@@ -27,7 +27,7 @@
 </div>
         </div>
         <div class="col-sm-9">
-            <div class="border p-3" style="margin-top:60px;">
+            <div class="border p-3">
                <br><h1>ข้อมูลทั่วไป</h1><hr><br>
 <?php 
 require 'config.php';
