@@ -47,6 +47,7 @@ require 'config.php';
             $AGE = $row['AGE'];
             $lang = $row['lang'];
             $skill = $row['skill'];
+            echo '<p><span color="#C0C0C0">ชื่อ </span>'.$fname.'</p>';
         
     
             ?>
