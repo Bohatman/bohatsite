@@ -49,6 +49,7 @@ require 'config.php';
             $skill = $row['skill'];
             ?>
     <form>
+        <div class = "row">
         <div class="col-sm-5">
     <div class="input-group mb-3">
     <div class="input-group-prepend">
@@ -64,7 +65,7 @@ require 'config.php';
     </div>
     <input type="text" class="form-control" placeholder="<?php echo $sex;?>" readonly>
   </div>
-
+</div>
 </div>
     </form>
  </div></div></div>
