@@ -15,44 +15,47 @@
 	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
 	<link href="http://fonts.googleapis.com/css?family=Cookie" rel="stylesheet" type="text/css">
 </head>
+<script type="text/javascript">
+$(document).ready(function(){
+    $(document).on('click','.show_more',function(){
+        var ID = $(this).attr('id');
+        $('.show_more').hide();
+        $('.loding').show();
+        $.ajax({
+            type:'POST',
+            url:'ajax_more.php',
+            data:'id='+ID,
+            success:function(html){
+                $('#show_more_main'+ID).remove();
+                $('.postList').append(html);
+            }
+        });
+    });
+});
+</script>
 <body>
 
 <?php 
-
 require 'config.php';
-$sql = "SELECT * FROM short_post ORDER BY POSTID desc";
-$result = $link->query($sql);
-getdata($result,3);
-getdata($result,5);
-function getdata($result,$cout){
-if ($result->num_rows > 0) {
-    $row = $result->fetch_assoc();
-    if($row['USERNAME']!=null){
-    ?>
-    <div class="media border p-3">
-  <img src=".\pic\img_avatar3.png" alt="John Doe" class="mr-3 mt-3 rounded-circle" style="width:60px;">
-  <div class="media-body">
-    <h4><?= $row['USERNAME']?> <small><i>Posted on <?= $row['DATE']?></i></small></h4>
-    <p><?= $row['DATA']?></p>
-  </div>
-  
-    </div>
-    <?php
-    /*
-        <div class="float-right">
-        <form action = "del.php" method = "post">
-            <input type="hidden" name = "id" value =<?=$row['POSTID']?>>
-        <button type="submit" class="btn btn-primary mb-2">Submit</button>
-        </form>
-    </div>
-    */
-    if($cout >0 ){getdata($result,$cout-1);}
-        
-}
-} else {
-  
-}
-}
+$query = $link->query("SELECT * FROM short_post ORDER BY POSTID DESC LIMIT 2");
+if($query->num_rows > 0){ 
+  while($row = $query->fetch_assoc()){ 
+      $postID = $row['POSTID'];
+      $content = $row['DATA'];
+      $date = $row['DATE'];
+      $username=$row['USERNAME'];
+      echo '<div class="list_item">';
+      echo '<div class="media border p-3">';
+      echo '<div class="media-body">';
+      echo '<h4>'.$username.'<small><i>Posted on '.$date.'</i></small></h4>';
+      echo '<p>'.$data.'</p>';
+      echo '</div>';
+      echo '<img src=".\pic\img_avatar3.png" alt="John Doe" class="ml-3 mt-3 rounded-circle" style="width:60px;">';
+      echo '</div>';
+      echo '<span id="'.$postID.'"class="show_more" title="Load more posts">Show more</span>';
+      echo '<span class="loding" style="display: none;"><span class="loding_txt">Loading...</span></span>';
+      echo '</div>';
+
 ?>
 
 </body>
