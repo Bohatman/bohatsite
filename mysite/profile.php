@@ -49,13 +49,14 @@ require 'config.php';
             $skill = $row['skill'];
             ?>
     <form>
+        <div class="col-sm-4">
     <div class="input-group mb-3">
     <div class="input-group-prepend">
       <span class="input-group-text">NAME</span>
     </div>
     <input type="text" class="form-control" placeholder="<?php echo $fname." ".$lname;?>" readonly>
   </div>
-
+</div>
     </form>
  </div></div></div>
         </div>
