@@ -58,6 +58,7 @@ require 'config.php';
     <input type="text" class="form-control" placeholder="<?php echo $fname." ".$lname;?>" readonly>
   </div>
 </div>
+
 <div class="col-sm-3">
 <div class="input-group mb-3">
     <div class="input-group-prepend">
@@ -66,6 +67,16 @@ require 'config.php';
     <input type="text" class="form-control" placeholder="<?php echo $sex;?>" readonly>
   </div>
 </div>
+
+<div class="col-sm-1">
+<div class="input-group mb-3">
+    <div class="input-group-prepend">
+      <span class="input-group-text">AGE</span>
+    </div>
+    <input type="text" class="form-control" placeholder="<?php echo $AGE;?>" readonly>
+  </div>
+</div>
+
 </div>
     </form>
  </div></div></div>
