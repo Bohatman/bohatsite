@@ -48,8 +48,8 @@ $(document).ready(function(){
     ?>
     <div class="list_item">
     <div class="media border p-3">
-    <div class="media-body">
     <img src=".\pic\img_avatar3.png" alt="Avatar" class="ml-3 mt-3 rounded-circle" style="width:60px;">
+    <div class="media-body">
     <h4><?php echo $username; ?><small><i> Posted on <?php echo $date; ?></i></small></h4>
     <p><?php echo $content; ?></p>
     </div>
