@@ -46,5 +46,12 @@ require 'config.php';
             ?>
  </div>
         </div>
+        <div class="navbar navbar-expand-lg navbar-light bg-light fixed-bottom">
+    <div class="container">
+      <p class="navbar-text pull-left">© 2018 - Site Built By BOHAT
+        <a href="https://www.facebook.com/developers.e" target="_blank">FACEBOOK</a>
+      </p>
+    </div>
+  </div>
 </body>
 </html>
