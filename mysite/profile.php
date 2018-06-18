@@ -94,7 +94,7 @@ require 'config.php';
 
 <div class = "row">
 
-<div class="col-sm-7">
+<div class="col-sm-9">
 <div class="input-group mb-3">
 <div class="input-group-prepend">
 <span class="input-group-text">UNIVERSITY</span>
