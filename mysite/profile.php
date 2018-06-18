@@ -27,6 +27,7 @@
 </div>
         </div>
         <div class="col-sm-9">
+            <div class="border p-3">
 <?php 
 require 'config.php';
     $query = $link->query("SELECT * FROM infomation");
@@ -44,7 +45,7 @@ require 'config.php';
         
     
             ?>
- </div></div>
+ </div></div></div>
         </div>
         <div class="navbar navbar-expand-lg navbar-light bg-light fixed-bottom">
     <div class="container">
