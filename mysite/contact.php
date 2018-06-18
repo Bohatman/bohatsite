@@ -46,7 +46,7 @@
                 <center><h1>Let's Talk</h1>
                 <p><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">CLICK HERE !</button></p> </center>
               </div>
-              <?php include 'post.php';?>
+              
                 
             </div>
         </div>
@@ -58,7 +58,7 @@
         
         <!-- Modal body -->
         <div class="modal-body">
-          <?php include 'poster.html';?>
+          
         </div>
         
         <!-- Modal footer -->
