@@ -45,7 +45,7 @@ require 'config.php';
             $tel = $row['tel'];//c
             $work = $row['work'];
             $AGE = $row['AGE'];//c
-            $lang = $row['lang'];
+            $lang = $row['lang'];//c
             $skill = $row['skill'];
             ?>
     <form>
@@ -122,6 +122,28 @@ require 'config.php';
 <span class="input-group-text">LANGUAGE</span>
 </div>
 <input type="text" class="form-control" placeholder="<?php echo $lang;?>" readonly>
+</div>
+</div>
+
+</div>
+
+<div class = "row">
+
+<div class="col-sm-3">
+<div class="input-group mb-3">
+<div class="input-group-prepend">
+<span class="input-group-text">WORK</span>
+</div>
+<input type="text" class="form-control" placeholder="<?php echo $work;?>" readonly>
+</div>
+</div>
+
+<div class="col-sm-5">
+<div class="input-group mb-3">
+<div class="input-group-prepend">
+<span class="input-group-text">SKILL</span>
+</div>
+<input type="text" class="form-control" placeholder="<?php echo $skill;?>" readonly>
 </div>
 </div>
 
