@@ -49,7 +49,7 @@ require 'config.php';
             $skill = $row['skill'];
             ?>
     <form>
-        <div class="col-sm-4">
+        <div class="col-sm-5">
     <div class="input-group mb-3">
     <div class="input-group-prepend">
       <span class="input-group-text">NAME</span>
