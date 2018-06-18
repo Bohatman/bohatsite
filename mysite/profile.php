@@ -148,6 +148,47 @@ require 'config.php';
 </div>
 
 </div>
+
+<div class = "row">
+
+<div id="demo" class="carousel slide" data-ride="carousel">
+  <ul class="carousel-indicators">
+    <li data-target="#demo" data-slide-to="0" class="active"></li>
+    <li data-target="#demo" data-slide-to="1"></li>
+    <li data-target="#demo" data-slide-to="2"></li>
+  </ul>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src=".\pic\azurebootcamp.jpg" alt="Los Angeles" width="1100" height="500">
+      <div class="carousel-caption">
+        <h3>บริษัท ไมโครซอฟท์ (ประเทศไทย) จำกัด</h3>
+        <p>กิจกรรมเกี่ยวกับการใช้งาน Microsoft Azure</p>
+      </div>   
+    </div>
+    <div class="carousel-item">
+      <img src=".\pic\azuregekk.jpg" alt="Chicago" width="1100" height="500">
+      <div class="carousel-caption">
+        <h3>Chulalongkorn University</h3>
+        <p>การแข่งขัน Hackathon</p>
+      </div>   
+    </div>
+    <div class="carousel-item">
+      <img src=".\pic\parallax.jpg" alt="New York" width="1100" height="500">
+      <div class="carousel-caption">
+        <h3>King Mongkut's University of Technology North Bangkok</h3>
+        <p>อบรมการสร้างเว็บไซต์แบบ Parallax</p>
+      </div>   
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#demo" data-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </a>
+  <a class="carousel-control-next" href="#demo" data-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </a>
+</div>
+
+</div> 
     </form>
  </div></div></div>
         </div>
