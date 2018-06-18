@@ -57,6 +57,15 @@ require 'config.php';
     <input type="text" class="form-control" placeholder="<?php echo $fname." ".$lname;?>" readonly>
   </div>
 </div>
+<div class="col-sm-4">
+<div class="input-group mb-3">
+    <div class="input-group-prepend">
+      <span class="input-group-text">SEX</span>
+    </div>
+    <input type="text" class="form-control" placeholder="<?php echo $sex;?>" readonly>
+  </div>
+
+</div>
     </form>
  </div></div></div>
         </div>
