@@ -151,6 +151,7 @@ require 'config.php';
 
 <div class = "row">
 <div class = "col-sm-12">
+<br><h1>รูปภาพกิจกรรม</h1><hr><br>
 <div id="demo" class="carousel slide" data-ride="carousel">
   <ul class="carousel-indicators">
     <li data-target="#demo" data-slide-to="0" class="active"></li>
