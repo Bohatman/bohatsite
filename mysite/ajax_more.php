@@ -17,7 +17,7 @@ if(!empty($_POST["id"])){
     if($query->num_rows > 0){ 
         while($row = $query->fetch_assoc()){
             $postID = $row['POSTID'];
-            $content = $row['DATA'];
+            $content = $row['DATA']; 
             $date = $row['DATE'];
             $username=$row['USERNAME'];
             echo '<div class="list_item">';
@@ -27,6 +27,10 @@ if(!empty($_POST["id"])){
             echo '<p>'.$data.'</p>';
             echo '</div>';
             echo '<img src=".\pic\img_avatar3.png" alt="John Doe" class="ml-3 mt-3 rounded-circle" style="width:60px;">';
+            echo '</div>';
+            echo '<div class="show_more_main" id="show_more_main'.$postID.'">';
+            echo '<span id="'.$postID.'"class="show_more" title="Load more posts">Show more</span>';
+            echo '<span class="loding" style="display: none;"><span class="loding_txt">Loading...</span></span>';
             echo '</div></div>';
     ?>
         
