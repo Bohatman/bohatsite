@@ -36,7 +36,7 @@
             <div class="border p-3">
               <div class="jumbotron">
                 <center><h1>Let's Talk</h1>
-                <p>Bootstrap is the most popular HTML, CSS...</p> </center>
+                <p><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">CLICK HERE !</button></p> </center>
               </div>
               <?php include 'post.php';?>
                 
