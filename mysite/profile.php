@@ -37,14 +37,14 @@
 require 'config.php';
     $query = $link->query("SELECT * FROM infomation");
     $row = $query->fetch_assoc();
-            $fname = $row['fname'];
-            $lname = $row['lname'];
-            $city = $row['city'];
-            $sex = $row['sex'];
-            $study = $row['study'];
+            $fname = $row['fname']; //c
+            $lname = $row['lname']; //c
+            $city = $row['city'];//c
+            $sex = $row['sex'];//c
+            $study = $row['study'];//c
             $tel = $row['tel'];
             $work = $row['work'];
-            $AGE = $row['AGE'];
+            $AGE = $row['AGE'];//c
             $lang = $row['lang'];
             $skill = $row['skill'];
             ?>
@@ -105,6 +105,18 @@ require 'config.php';
 
 </div>
 
+<div class = "row">
+
+<div class="col-sm-5">
+<div class="input-group mb-3">
+<div class="input-group-prepend">
+<span class="input-group-text">TEL.</span>
+</div>
+<input type="text" class="form-control" placeholder="<?php echo $tel;?>" readonly>
+</div>
+</div>
+
+</div>
     </form>
  </div></div></div>
         </div>
