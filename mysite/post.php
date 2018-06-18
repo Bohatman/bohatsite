@@ -38,7 +38,6 @@ $(document).ready(function(){
 <?php 
 require 'config.php';
 $query = $link->query("SELECT * FROM short_post ORDER BY POSTID DESC LIMIT 2");
-if($query->num_rows > 0){ 
   while($row = $query->fetch_assoc()){ 
       $postID = $row['POSTID'];
       $content = $row['DATA'];
