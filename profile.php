@@ -23,7 +23,7 @@
         <div class="card">
             <div class="card-header">PICTURE</div>
             <div class="card-body"><img class="card-img-top" src=".\pic\puttipong.jpg" alt="Puttipong" style="width:100%"></div> 
-            <div class="card-footer">BIRTHDAY 06/25/1997</div>
+            <div class="card-footer">BIRTHDATE 06/25/1997</div>
 </div>
         </div>
         <div class="col-sm-9">
