@@ -495,16 +495,16 @@
               <tr>
                 <td>Theory of Computation</td>
                 <td>3</td>
-                <td>?</td>
+                <td>A</td>
                 <td></td>
               </tr>
             </tbody>
             <thead>
               <tr>
                 <th style="text-align: right;">GPA</th>
-                <th>3.63</th>
+                <th>3.69</th>
                 <th>GPAX</th>
-                <th>??</th>
+                <th>3.52</th>
               </tr>
             </thead>
           </table>
